@@ -11,65 +11,109 @@
    
     <div class="input" >
     <button class="value" onclick="ver('HTML')"  id="ver">
-        <svg
-        viewBox="0 0 16 16"
-        >
-        <path
-            d="m1.5 13v1a.5.5 0 0 0 .3379.4731 18.9718 18.9718 0 0 0 6.1621 1.0269 18.9629 18.9629 0 0 0 6.1621-1.0269.5.5 0 0 0 .3379-.4731v-1a6.5083 6.5083 0 0 0 -4.461-6.1676 3.5 3.5 0 1 0 -4.078 0 6.5083 6.5083 0 0 0 -4.461 6.1676zm4-9a2.5 2.5 0 1 1 2.5 2.5 2.5026 2.5026 0 0 1 -2.5-2.5zm2.5 3.5a5.5066 5.5066 0 0 1 5.5 5.5v.6392a18.08 18.08 0 0 1 -11 0v-.6392a5.5066 5.5066 0 0 1 5.5-5.5z"
-            fill="#7D8590"
-        ></path>
+        <svg viewBox="0 0  16" width="20" height="20">
+            <!-- Corpo principal do ícone -->
+            <path
+                d="M2 1h12l-1.09 12.48L8 15l-4.91-1.52L2 1z"
+                fill="#E34F26"
+            />
+            <!-- Parte superior do ícone -->
+            <path
+                d="M8 13.12l3.75-1.16L11.64 3H8v10.12z"
+                fill="#EF652A"
+            />
+            <!-- Texto ou marcações no ícone -->
+            <path
+                d="M6.7 7.7H4.4l-.1-1.2h2.3L6.7 7.7zM4.4 4.7h4.5l-.1 1.2H4.4L4.4 4.7zm.2 3.5H6.6l-.2 1.7L8 9.8l.7-1.1-.4-1.6H4.5L4.6 8.2z"
+                fill="#FFF"
+            />
         </svg>
         HTML
     </button>
     <button class="value" onclick="ver('CSS')"  id="ver">
-        <svg viewBox="0 0 32 32">
-        <path
-            d="m17.074 30h-2.148c-1.038 0-1.914-.811-1.994-1.846l-.125-1.635c-.687-.208-1.351-.484-1.985-.824l-1.246 1.067c-.788.677-1.98.631-2.715-.104l-1.52-1.52c-.734-.734-.78-1.927-.104-2.715l1.067-1.246c-.34-.635-.616-1.299-.824-1.985l-1.634-.125c-1.035-.079-1.846-.955-1.846-1.993v-2.148c0-1.038.811-1.914 1.846-1.994l1.635-.125c.208-.687.484-1.351.824-1.985l-1.068-1.247c-.676-.788-.631-1.98.104-2.715l1.52-1.52c.734-.734 1.927-.779 2.715-.104l1.246 1.067c.635-.34 1.299-.616 1.985-.824l.125-1.634c.08-1.034.956-1.845 1.994-1.845h2.148c1.038 0 1.914.811 1.994 1.846l.125 1.635c.687.208 1.351.484 1.985.824l1.246-1.067c.787-.676 1.98-.631 2.715.104l1.52 1.52c.734.734.78 1.927.104 2.715l-1.067 1.246c.34.635.616 1.299.824 1.985l1.634.125c1.035.079 1.846.955 1.846 1.993v2.148c0 1.038-.811 1.914-1.846 1.994l-1.635.125c-.208.687-.484 1.351-.824 1.985l1.067 1.246c.677.788.631 1.98-.104 2.715l-1.52 1.52c-.734.734-1.928.78-2.715.104l-1.246-1.067c-.635.34-1.299.616-1.985.824l-.125 1.634c-.079 1.035-.955 1.846-1.993 1.846zm-5.835-6.373c.848.53 1.768.912 2.734 1.135.426.099.739.462.772.898l.18 2.341 2.149-.001.18-2.34c.033-.437.347-.8.772-.898.967-.223 1.887-.604 2.734-1.135.371-.232.849-.197 1.181.089l1.784 1.529 1.52-1.52-1.529-1.784c-.285-.332-.321-.811-.089-1.181.53-.848.912-1.768 1.135-2.734.099-.426.462-.739.898-.772l2.341-.18h-.001v-2.148l-2.34-.18c-.437-.033-.8-.347-.898-.772-.223-.967-.604-1.887-1.135-2.734-.232-.37-.196-.849.089-1.181l1.529-1.784-1.52-1.52-1.784 1.529c-.332.286-.81.321-1.181.089-.848-.53-1.768-.912-2.734-1.135-.426-.099-.739-.462-.772-.898l-.18-2.341-2.148.001-.18 2.34c-.033.437-.347.8-.772.898-.967.223-1.887.604-2.734 1.135-.37.232-.849.197-1.181-.089l-1.785-1.529-1.52 1.52 1.529 1.784c.285.332.321.811.089 1.181-.53.848-.912 1.768-1.135 2.734-.099.426-.462.739-.898.772l-2.341.18.002 2.148 2.34.18c.437.033.8.347.898.772.223.967.604 1.887 1.135 2.734.232.37.196.849-.089 1.181l-1.529 1.784 1.52 1.52 1.784-1.529c.332-.287.813-.32 1.18-.089z"
-            fill="#7D8590"
-        ></path>
-        <path
-            d="m16 23c-3.859 0-7-3.141-7-7s3.141-7 7-7 7 3.141 7 7-3.141 7-7 7zm0-12c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z"
-            fill="#7D8590"
-        ></path>
+        <svg viewBox="16" width="20" height="20">
+            <!-- Corpo principal do ícone -->
+            <path
+                d="M2 1h12l-1.09 12.48L8 15l-4.91-1.52L2 1z"
+                fill="#264DE4"
+            />
+            <!-- Parte superior do ícone -->
+            <path
+                d="M8 13.12l3.75-1.16L11.64 3H8v10.12z"
+                fill="#2965F1"
+            />
+            <!-- Texto ou marcações no ícone -->
+            <path
+                d="M6.2 7h4.4l-.3 3.2L8 11.3l-2.3-.8-.2-2.5h1.4L6.7 9H8.2l.3-1.2H5.9l.3-1h4.2l-.1 1H6.2z"
+                fill="#FFF"
+            />
         </svg>
         CSS
     </button>
     <button class="value" onclick="ver('React')"  id="ver">
-        <svg viewBox="0 0 128 128">
-        <path
-            d="m109.9 20.63a6.232 6.232 0 0 0 -8.588-.22l-57.463 51.843c-.012.011-.02.024-.031.035s-.023.017-.034.027l-4.721 4.722a1.749 1.749 0 0 0 0 2.475l.341.342-3.16 3.16a8 8 0 0 0 -1.424 1.967 11.382 11.382 0 0 0 -12.055 10.609c-.006.036-.011.074-.015.111a5.763 5.763 0 0 1 -4.928 5.41 1.75 1.75 0 0 0 -.844 3.14c4.844 3.619 9.4 4.915 13.338 4.915a17.14 17.14 0 0 0 11.738-4.545l.182-.167a11.354 11.354 0 0 0 3.348-8.081c0-.225-.02-.445-.032-.667a8.041 8.041 0 0 0 1.962-1.421l3.16-3.161.342.342a1.749 1.749 0 0 0 2.475 0l4.722-4.722c.011-.011.018-.025.029-.036s.023-.018.033-.029l51.844-57.46a6.236 6.236 0 0 0 -.219-8.589zm-70.1 81.311-.122.111c-.808.787-7.667 6.974-17.826 1.221a9.166 9.166 0 0 0 4.36-7.036 1.758 1.758 0 0 0 .036-.273 7.892 7.892 0 0 1 9.122-7.414c.017.005.031.014.048.019a1.717 1.717 0 0 0 .379.055 7.918 7.918 0 0 1 4 13.317zm5.239-10.131c-.093.093-.194.176-.293.26a11.459 11.459 0 0 0 -6.289-6.286c.084-.1.167-.2.261-.3l3.161-3.161 6.321 6.326zm7.214-4.057-9.479-9.479 2.247-2.247 9.479 9.479zm55.267-60.879-50.61 56.092-9.348-9.348 56.092-50.61a2.737 2.737 0 0 1 3.866 3.866z"
-            fill="#7D8590"
-        ></path>
+        <svg viewBox="0 0 24 24" width="20" height="20">
+            <!-- Círculo central do átomo -->
+            <circle cx="9" cy="9" r="1.8" fill="#61DAFB"/>
+            
+            <!-- Primeiro orbital do átomo -->
+            <ellipse cx="9" cy="9" rx="10" ry="4.5" fill="none" stroke="#61DAFB" stroke-width="1.5"/>
+            
+            <!-- Segundo orbital do átomo, rotacionado -->
+            <ellipse cx="9" cy="9" rx="10" ry="4.5" fill="none" stroke="#61DAFB" stroke-width="1.5" transform="rotate(60 9 9)"/>
+            
+            <!-- Terceiro orbital do átomo, rotacionado -->
+            <ellipse cx="9" cy="9" rx="10" ry="4.5" fill="none" stroke="#61DAFB" stroke-width="1.5" transform="rotate(120 9 9)"/>
         </svg>
         React
     </button>
     <button class="value" onclick="ver('JS')"  id="ver">
-        <svg viewBox="0 0 32 32" id="svg8">
-        <g transform="translate(-33.022 -30.617)">
-            <path
-            d="m49.021 31.617c-2.673 0-4.861 2.188-4.861 4.861 0 1.606.798 3.081 1.873 3.834h-7.896c-1.7 0-3.098 1.401-3.098 3.1s1.399 3.098 3.098 3.098h4.377l.223 2.641s-1.764 8.565-1.764 8.566c-.438 1.642.55 3.355 2.191 3.795s3.327-.494 3.799-2.191l2.059-5.189 2.059 5.189c.44 1.643 2.157 2.631 3.799 2.191s2.63-2.153 2.191-3.795l-1.764-8.566.223-2.641h4.377c1.699 0 3.098-1.399 3.098-3.098s-1.397-3.1-3.098-3.1h-7.928c1.102-.771 1.904-2.228 1.904-3.834 0-2.672-2.189-4.861-4.862-4.861zm0 2c1.592 0 2.861 1.27 2.861 2.861 0 1.169-.705 2.214-1.789 2.652-.501.203-.75.767-.563 1.273l.463 1.254c.145.393.519.654.938.654h8.975c.626 0 1.098.473 1.098 1.1s-.471 1.098-1.098 1.098h-5.297c-.52 0-.952.398-.996.916l-.311 3.701c-.008.096-.002.191.018.285 0 0 1.813 8.802 1.816 8.82.162.604-.173 1.186-.777 1.348s-1.184-.173-1.346-.777c-.01-.037-3.063-7.76-3.063-7.76-.334-.842-1.525-.842-1.859 0 0 0-3.052 7.723-3.063 7.76-.162.604-.741.939-1.346.777s-.939-.743-.777-1.348c.004-.019 1.816-8.82 1.816-8.82.02-.094.025-.189.018-.285l-.311-3.701c-.044-.518-.477-.916-.996-.916h-5.297c-.627 0-1.098-.471-1.098-1.098s.472-1.1 1.098-1.1h8.975c.419 0 .793-.262.938-.654l.463-1.254c.188-.507-.062-1.07-.563-1.273-1.084-.438-1.789-1.483-1.789-2.652.001-1.591 1.271-2.861 2.862-2.861z"
-            fill="#7D8590"
-            ></path>
-        </g>
+        <svg viewBox="0 0 24 24" width="20" height="20">
+            <!-- Fundo do ícone -->
+            <rect width="24" height="24" fill="#F7DF1E"/>
+        
+            <!-- Letra "J" -->
+            <path d="M9 5h2v10c0 2.5-1.5 3.5-3.2 3.5-1.4 0-2.3-.3-3-1l1-2c.5.4 1 .7 1.8.7.7 0 1.4-.3 1.4-1.5V5z" fill="#000"/>
+        
+            <!-- Letra "S" -->
+            <path d="M14.2 18c.6.4 1.3.7 2.2.7 1.2 0 1.8-.6 1.8-1.3 0-.8-.6-1.1-1.6-1.6l-.6-.3c-1.7-.7-2.8-1.6-2.8-3.4 0-1.7 1.4-3 3.6-3 1.1 0 1.9.2 2.5.5l-.6 2c-.4-.2-.9-.5-1.8-.5-1 0-1.6.6-1.6 1.2 0 .8.6 1.1 1.5 1.5l.6.2c1.8.7 2.9 1.6 2.9 3.5 0 2-1.5 3.1-3.7 3.1-1.1 0-2.2-.3-2.9-.8l.7-2.1z" fill="#000"/>
         </svg>
+        
         JS
     </button>
     <button class="value" onclick="ver('Node')"  id="ver">
-        <svg viewBox="0 0 24 25">
-        <path
-            fill="#7D8590"
-            d="m11.9572 4.31201c-3.35401 0-6.00906 2.59741-6.00906 5.67742v3.29037c0 .1986-.05916.3927-.16992.5576l-1.62529 2.4193-.01077.0157c-.18701.2673-.16653.5113-.07001.6868.10031.1825.31959.3528.67282.3528h14.52603c.2546 0 .5013-.1515.6391-.3968.1315-.2343.1117-.4475-.0118-.6093-.0065-.0085-.0129-.0171-.0191-.0258l-1.7269-2.4194c-.121-.1695-.186-.3726-.186-.5809v-3.29037c0-1.54561-.6851-3.023-1.7072-4.00431-1.1617-1.01594-2.6545-1.67311-4.3019-1.67311zm-8.00906 5.67742c0-4.27483 3.64294-7.67742 8.00906-7.67742 2.2055 0 4.1606.88547 5.6378 2.18455.01.00877.0198.01774.0294.02691 1.408 1.34136 2.3419 3.34131 2.3419 5.46596v2.97007l1.5325 2.1471c.6775.8999.6054 1.9859.1552 2.7877-.4464.795-1.3171 1.4177-2.383 1.4177h-14.52603c-2.16218 0-3.55087-2.302-2.24739-4.1777l1.45056-2.1593zm4.05187 11.32257c0-.5523.44772-1 1-1h5.99999c.5523 0 1 .4477 1 1s-.4477 1-1 1h-5.99999c-.55228 0-1-.4477-1-1z"
-        ></path>
+        <svg viewBox="0 0 32 32" width="20" height="20">
+            <!-- Hexágono de fundo -->
+            <polygon points="16,1 30,8 30,24 16,31 2,24 2,8" fill="#339933"/>
+        
+            <!-- Texto "Node" -->
+            <path d="M9 11h1v10H9zm2 10h1v-2h1v-1H11V8h1v2h1v1h-1v6h1v1H11zm2 1h1v-1h1V9h-2v12h1zm3 0v-1h1v-1h-1v-1h1v-1h-1v-1h1v-1h-1V9h2v11h1v1h-3z" fill="#FFF"/>
+        
+            <!-- Texto ".js" abaixo de "Node" -->
+            <path d="M19.2 20.6c.4.2.8.4 1.2.4.4 0 .7-.1.7-.3 0-.2-.2-.3-.8-.5l-.6-.2c-1.1-.3-1.5-.8-1.5-1.6 0-.8.6-1.5 1.8-1.5.5 0 1 .1 1.4.3l-.2.7c-.4-.2-.8-.3-1.2-.3-.4 0-.6.2-.6.4 0 .2.3.3.8.5l.6.2c1.2.3 1.5.9 1.5 1.6 0 .8-.6 1.5-1.9 1.5-.7 0-1.2-.1-1.6-.3l.2-.8z" fill="#FFF"/>
         </svg>
         Node
     </button>
     <button class="value" onclick="ver('DevOps')"  id="ver">
-        <svg viewBox="0 0 24 25">
-        <path
-            fill="#7D8590"
-            d="m11.9572 4.31201c-3.35401 0-6.00906 2.59741-6.00906 5.67742v3.29037c0 .1986-.05916.3927-.16992.5576l-1.62529 2.4193-.01077.0157c-.18701.2673-.16653.5113-.07001.6868.10031.1825.31959.3528.67282.3528h14.52603c.2546 0 .5013-.1515.6391-.3968.1315-.2343.1117-.4475-.0118-.6093-.0065-.0085-.0129-.0171-.0191-.0258l-1.7269-2.4194c-.121-.1695-.186-.3726-.186-.5809v-3.29037c0-1.54561-.6851-3.023-1.7072-4.00431-1.1617-1.01594-2.6545-1.67311-4.3019-1.67311zm-8.00906 5.67742c0-4.27483 3.64294-7.67742 8.00906-7.67742 2.2055 0 4.1606.88547 5.6378 2.18455.01.00877.0198.01774.0294.02691 1.408 1.34136 2.3419 3.34131 2.3419 5.46596v2.97007l1.5325 2.1471c.6775.8999.6054 1.9859.1552 2.7877-.4464.795-1.3171 1.4177-2.383 1.4177h-14.52603c-2.16218 0-3.55087-2.302-2.24739-4.1777l1.45056-2.1593zm4.05187 11.32257c0-.5523.44772-1 1-1h5.99999c.5523 0 1 .4477 1 1s-.4477 1-1 1h-5.99999c-.55228 0-1-.4477-1-1z"
-        ></path>
+        <svg viewBox="0 0 24 24" width="20" height="20">
+            <!-- Parte esquerda do ciclo (desenvolvimento) -->
+            <path
+                d="M8 12a4 4 0 1 1 0-8 4 4 0 1 1 0 8z"
+                fill="#007ACC"
+            />
+            <!-- Parte direita do ciclo (operações) -->
+            <path
+                d="M16 12a4 4 0 1 1 0 8 4 4 0 1 1 0-8z"
+                fill="#28A745"
+            />
+            <!-- Conexão superior entre os ciclos -->
+            <path
+                d="M8 8c1.7 1.7 4.3 1.7 6 0M8 16c1.7-1.7 4.3-1.7 6 0"
+                fill="none"
+                stroke="#555"
+                stroke-width="1.5"
+            />
         </svg>
+        
         DevOps
     </button>
     </div>
@@ -78,80 +122,282 @@
         <h1>HTML 5</h1>
         <h2>Principais Tags de HTML</h2>
         <ul> 
-            <li><xmp><!--...--> Define um comentário;</xmp></li>
-            <li><xmp><!DOCTYPE> Define o tipo de documento; (No HTML 4 existiam três (3) diferentes tipos de doctype, mas no HTML 5 temos apenas um (1) tipo <!DOCTYPE HTML>. É aqui que o navegador entende o tipo de documento e como ele deve interpretar as tags nele contidas.)</xmp></li>
-            <li><xmp><a> Define um hyperlink;</xmp></li>
-            <li><xmp><abbr> Define uma abreviação</li>
-            <li><xmp><address> Define um endereço. (Passa a ser tratado como uma seção);</xmp></li>
-            <li><xmp><area> Define uma área dentro de um mapa de imagem;</xmp></li>
-            <li><xmp><b> Define um texto em negrito; (Possui o mesmo nível semântico que um SPAN, e também o estilo de negrito no texto. Contudo, ele não dá nenhuma importância para o texto marcado com ele.)</xmp></li>
-            <li><xmp><base> Define uma base URL para todos os links da página;</xmp></li>
-            <li><xmp><bdo> Define a direção do texto apresentado;</xmp></li>
-            <li><xmp><blockquote> Define uma citação longa;</xmp></li>
-            <li><xmp><body> Define o corpo da página;</xmp></li>
-            <li><xmp><br> Insere uma quebra de linha simples;</xmp></li>
-            <li><xmp><button> Define um botão de comando;</xmp></li>
-            <li><xmp><caption> Define o "caption" de uma tabela;</xmp></li>
-            <li><xmp><cite> Define uma citação;</xmp></li>
-            <li><xmp><code> Define o código texto do computador;</xmp></li>
-            <li><xmp><col> Define os atributos da coluna da tabela;</xmp></li>
-            <li><xmp><colgroup> Define um grupo de colunas da tabela;</xmp></li>
-            <li><xmp><dd> Define uma descrição de definição;</xmp></li>
-            <li><xmp><del> Define um texto deletado;</xmp></li>
-            <li><xmp><dfn> Define um termo de definição;</xmp></li>
-            <li><xmp><div> Define uma seção no documento;</xmp></li>
-            <li><xmp><dl> Define uma lista de definição;</xmp></li>
-            <li><xmp><dt> Define um termo de definição;</xmp></li>
-            <li><xmp><em> Define um texto em ênfase;</xmp></li>
-            <li><xmp><fieldset> Define um conjunto de campos (fieldset);</xmp></li>
-            <li><xmp><form> Define um formulário;</xmp></li>
-            <li><xmp><h1> até >h6> Define do cabeçalho 1 até o cabeçalho 6;</xmp></li>
-            <li><xmp><head> Define uma informação sobre o documento. (Não aceita mais elementos Child como filho);</xmp></li>
-            <li><xmp><hr> Define uma regra horizontal. (Tem o mesmo nível que um parágrafo, mas também é utilizado para fazer separações e quebras de linha);</xmp></li>
-            <li><xmp><html> Define um documento html;</xmp></li>
-            <li><xmp><i> Define um texto em itálico; (Possui o mesmo nível semântico que um SPAN. O texto continua sendo itálico e para usuários de leitores de tela, a voz utilizada é modificada para indicar ênfase. É de grande valor e utilidade para marcar, termos técnicos, termos em outras linguagens etc.)</xmp></li>
-            <li><xmp><iframe> Define uma linhas sobre a janela (frame);</xmp></li>
-            <li><xmp><img> Define uma imagem;</xmp></li>
-            <li><xmp><input> Define um campo de inserção;</xmp></li>
-            <li><xmp><ins> Define um texto inserido;</xmp></li>
-            <li><xmp><kbd> Define um texto do teclado;</xmp></li>
-            <li><xmp><label> Define uma "label" para o formulário;</xmp></li>
-            <li><xmp><legend> Define um título para os campos (fields);</xmp></li>
-            <li><xmp><li> Define os itens da lista;</xmp></li>
-            <li><xmp><link> Define uma referência;</xmp></li>
-            <li><xmp><map> Define uma imagem de mapa;</xmp></li>
-            <li><xmp><menu> Define uma lista de "menus";</xmp></li>
-            <li><xmp><meta> Define informações meta;</xmp></li>
-            <li><xmp><noscript> Define uma seção noscript;</xmp></li>
-            <li><xmp><object> Define um objeto incorporado;</xmp></li>
-            <li><xmp><ol> Define uma lista ordenada;</xmp></li>
-            <li><xmp><optgroup> Define um grupo de opção;</xmp></li>
-            <li><xmp><option> Define uma opção em uma lista suspensa (drop-down list);</xmp></li>
-            <li><xmp><p> Define um parágrafo;</xmp></li>
-            <li><xmp><param> Define um parâmetro para determinado objeto;</xmp></li>
-            <li><xmp><pre> Define um texto pré-formatado;</xmp></li>
-            <li><xmp><q> Define uma citação curta;</xmp></li>
-            <li><xmp><s> Define um texto que não é mais correto.</xmp></li>
-            <li><xmp><samp> Define um código de amostra;</xmp></li>
-            <li><xmp><script> </script>Define um script;</xmp></li>
-            <li><xmp><select> Define uma lista selecionável;</xmp></li>
-            <li><xmp><small> Define um pequeno texto;</xmp></li>
-            <li><xmp><span> Define uma seção no documento;</xmp></li>
-            <li><xmp><strong> Define um texto forte (similar ao negrito);</xmp></li>
-            <li><xmp><style></style>style> Define um estilo;</xmp></li>
-            <li><xmp><sub> Define um texto subscrito;</xmp></li>
-            <li><xmp><sup> Define um texto sobrescrito;</xmp></li>
-            <li><xmp><table> Define uma tabela;</xmp></li>
-            <li><xmp><tbody> Define o corpo da tabela;</xmp></li>
-            <li><xmp><td> Define uma célula da tabela;</xmp></li>
-            <li><xmp><textarea> Define um área de texto;</xmp></li>
-            <li><xmp><tfoot> Define o rodapé da tabela;</xmp></li>
-            <li><xmp><th> Define o cabeçalho da tabela;</xmp></li>
-            <li><xmp><thead> Define o cabeçalho da tabela;</xmp></li>
-            <li><xmp><title> Define o título do documento;</xmp></li>
-            <li><xmp><tr> Define uma linha da tabela;</xmp></li>
-            <li><xmp><ul> Define uma lista desordenada;</xmp></li>
-            <li><xmp><var> Define uma variável;</xmp> </li>           
+            <li>
+                <h3>1) Tags de Estrutura de Documento</h3>
+                <h4>Essas tags são essenciais para definir a estrutura básica e a organização do documento HTML.</h4>
+                <ul>
+                    <li>
+                        !DOCTYPE: Define o tipo do documento. <br>
+                        html: Define o documento como um HTML. <br>
+                        head: Contém informações de metadados sobre o documento. <br>
+                        title: Define o título da página no navegador. <br>
+                        body: Define o corpo do documento, onde o conteúdo visível é inserido <br> Exemplo: 
+                        <xmp><!DOCTYPE html></xmp>
+                        <xmp><html lang="pt-br"></xmp>
+                        <xmp><head></xmp>
+                        <xmp>    <meta charset="UTF-8"></xmp>
+                        <xmp>    <title>Meu Site</title></xmp>
+                        <xmp></head></xmp>
+                        <xmp><body></xmp>
+                        <xmp>    <h1>Bem-vindo ao meu site!</h1></xmp>
+                        <xmp><'/body></xmp>.             
+                    </li>
+                </ul>
+            </li> 
+            <li>
+                <h3>2) Tags de Cabeçalho e Seção</h3>
+                <h4>Essas tags definem seções, cabeçalhos e divisões de conteúdo.</h4>
+                <ul>
+                    <li>h1 a h6: Define cabeçalhos, do mais importante (h1) ao menos importante (h6)<br> Exemplo: 
+                        <xmp><h1>Título 1</h1></xmp><h1 style="text-align: left;">Título 1</h1>
+                        <xmp><h2>Título 2</h2></xmp><h2>Título 2</h2>
+                    </li>
+                    <li>header: Define o cabeçalho de uma página ou seção.<br> Exemplo: 
+                        <xmp><header></xmp>
+                        <xmp>    <h1>Cabeçalho da Página</h1></xmp>
+                        <xmp></header></xmp>
+                    </li>
+                    <li>section: Define uma seção genérica de conteúdo.<br> Exemplo: 
+                        <xmp><section></xmp>
+                        <xmp>   <h2>Conteúdo da Seção</h2></xmp>
+                        <xmp>   <p>Este é o conteúdo da seção.</p></xmp>
+                        <xmp></section></xmp>
+                    </li>
+                    <li>nav: Define um conjunto de links de navegação.<br> Exemplo: 
+                        <xmp><nav></xmp>
+                        <xmp>    <a href="#">Link 1</a></xmp>
+                        <xmp>    <a href="#">Link 2</a></xmp>
+                        <xmp></nav></xmp>
+                    </li>
+                    <li>article: Define um artigo ou conteúdo independente.<br> Exemplo: 
+                        <xmp><article></xmp>
+                        <xmp>   <h2>Artigo Principal</h2></xmp>
+                        <xmp>    <p>Este é o conteúdo de um artigo.</p></xmp>
+                        <xmp></article></xmp>
+                    </li>
+                    <li>aside: Define conteúdo lateral, como barras laterais.<br> Exemplo: 
+                        <xmp><aside></xmp>
+                        <xmp>    <h3>Barra Lateral</h3></xmp>
+                        <xmp>    <p>Este é o conteúdo da barra lateral.</p></xmp>
+                        <xmp></aside></xmp>
+                    </li>
+                    <li>footer: Define o rodapé de uma página ou seção.<br> Exemplo: 
+                        <xmp><footer></xmp>
+                        <xmp>   <p>Todos os direitos reservados &copy; Exemplo 2024</p></xmp>
+                        <xmp></footer></xmp>
+                    </li>
+                    <li>div: Define uma divisão ou contêiner genérico.<br> Exemplo: 
+                        <xmp><div></xmp>
+                        <xmp>   <h2>Divisão Principal</h2></xmp>
+                        <xmp>   <p>Este é o conteúdo da divisão.</p></xmp>
+                        <xmp><'/div></xmp>
+                    </li>
+                </ul>
+            </li> 
+            <li>
+                <h3>3) Tags de Texto e Formatação</h3>
+                <h4>Tags que afetam a aparência e o estilo do texto no documento.</h4>
+                <ul>
+                    <li>p: Define um parágrafo.<br>
+                        b: Define texto em negrito.<br>
+                        i: Define texto em itálico.<br> 
+                        em: Define texto com ênfase. <br>
+                        strong: Define texto forte (importante).<br> 
+                        small: Define texto menor.<br>
+                        sub: Define texto subscrito.<br>
+                        sup: Define texto sobrescrito.<br>
+                        br: Insere uma quebra de linha.<br>
+                        hr: Insere uma linha horizontal.<br>
+                        blockquote: Define uma citação longa.<br>
+                        q: Define uma citação curta.<br>
+                        cite: Define a citação de uma obra.<br>
+                        abbr: Define uma abreviação.<br>
+                        code: Define um trecho de código.<br>
+                        pre: Define texto pré-formatado.<br>
+                        s: Define texto tachado.<br>
+                        ins: Define texto inserido.<br>
+                        del: Define texto deletado.<br>
+                        Exemplo: <br>
+                        <p>Este é um parágrafo de texto. <b>texto em negrito</b>. <i>texto em itálico</i>. <em>em ênfase</em>. <strong>importante</strong>. <small>Texto menor ou nota de rodapé.</small>
+                        H<sub>2</sub>O (água). 10<sup>2</sup> (100). quebra de linha.<br>Texto na linha seguinte.</p>
+                        <p>Texto acima da linha horizontal.</p>
+                        <hr>
+                        <p>Texto abaixo da linha horizontal.</p>
+                        <blockquote>
+                            Esta é uma citação longa em bloco.
+                        </blockquote>                          
+                        <p>Ele disse: <q>Eu voltarei!</q></p>
+                    
+                        <p>Citação de um livro: <cite>O Senhor dos Anéis</cite>.</p>
+                    
+                        <p>A <abbr title="Organização das Nações Unidas">ONU</abbr> é uma organização internacional.</p>
+                    
+                        <p>Exemplo de código: <code>console.log('Olá, mundo!');</code></p>
+                    
+                        <pre>
+                            Este é um texto
+                        </pre>                          
+                    
+                        <p>Este é um <s>texto incorreto</s>.</p>
+                    
+                        <p>Este é um <ins>texto inserido</ins>.</p>
+                
+                        <p>Este é um <del>texto deletado</del>.</p>
+                    </li> 
+                </ul>
+            </li>
+            <li>
+                <h3>4) Tags de Listas</h3>
+                <h4>Essas tags são usadas para criar listas.</h4>
+                <ul>
+                    <li>ul: Define uma lista não ordenada (com marcadores).<br> 
+                        li: Define um item de lista.<br>Exemplo: <br>
+                        <xmp><ul></xmp>
+                        <xmp>    <li>Item 1</li></xmp>
+                        <xmp>    <li>Item 2</li></xmp>
+                        <xmp></ul></xmp>
+                    </li>
+                    <li>ol: Define uma lista ordenada (numerada).<br> Exemplo: <br>
+                        <xmp><ol></xmp>
+                        <xmp>    <li>Item 1</li></xmp>
+                        <xmp>    <li>Item 2</li></xmp>
+                        <xmp></ol></xmp>
+                    </li>
+                    <li>dl: Define uma lista de definições.<br>
+                        dt: Define um termo dentro da lista de definições.<br>
+                        dd: Define a descrição do termo na lista de definições.<br> Exemplo: <br>
+                        <xmp><dl></xmp>
+                        <xmp>    <dt>JavaScript</dt></xmp>
+                        <xmp>    <dd>Linguagem de programação para interatividade.</dd></xmp>
+                        <xmp></dl></xmp>  
+                        <dl>
+                             <dt>JavaScript</dt>
+                            <dd>Linguagem de programação para interatividade.</dd>
+                        </dl> 
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>5) Tags de Tabela</h3>
+                <h4>Essas tags são usadas para construir tabelas de dados.</h4>
+                <p>
+                    table: Define uma tabela.<br>
+                    tr: Define uma linha na tabela.<br>
+                    th: Define uma célula de cabeçalho de uma tabela.<br>
+                    td: Define uma célula comum em uma tabela.<br>
+                    thead: Define o cabeçalho da tabela.<br>
+                    tbody: Define o corpo da tabela.<br>
+                    tfoot: Define o rodapé da tabela.<br>
+                    caption: Define o título da tabela.<br>
+                    col: Define atributos para uma coluna.<br>
+                    colgroup: Define um grupo de colunas.<br>
+                    Exemplos:
+                </p>
+                <ul>
+                    <li>
+                        <xmp><table></xmp>
+                        <xmp>   <tr><th>Nome</th><th>Idade</th></tr></xmp>
+                        <xmp>   <tr><td>João</td><td>30</td></tr></xmp>
+                        <xmp></table></xmp>
+                        <table>
+                            <tr><th>Nome</th><th>Idade</th></tr>
+                            <tr><td>João</td><td>30</td></tr>
+                        </table>
+                    </li>
+                    <li>
+                        <xmp><table></xmp>
+                        <xmp>   <thead></xmp>
+                        <xmp>       <colgroup></xmp>
+                        <xmp>       <col style="background-color:yellow"></xmp>
+                        <xmp>       </colgroup></xmp>
+                        <xmp>       <caption>Usuários</caption></xmp>
+                        <xmp>       <tr><th>Nome</th><th>Idade</th></tr></xmp>
+                        <xmp>   </thead></xmp>
+                        <xmp>   <tbody></xmp>
+                        <xmp>       <tr><td>Maria</td><td>28</td></tr></xmp>
+                        <xmp>   </tbody></xmp>
+                        <xmp>   <tfoot></xmp>
+                        <xmp>       <tr><td>Total</td><td>100</td></tr></xmp>
+                        <xmp>   </tfoot></xmp>
+                        <xmp></table></xmp>
+                        <table>
+                            <thead>
+                                <colgroup>
+                                    <col style="background-color:yellow">
+                                </colgroup>
+                                <caption>Usuários</caption>
+                                <tr><th>Nome</th><th>Idade</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Maria</td><td>28</td></tr>
+                            </tbody>
+                            <tfoot>
+                                <tr><td>Total</td><td>100</td></tr>
+                            </tfoot>
+                        </table>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>6) Tags de Formulário e Interação</h3>
+                <h4>Essas tags são usadas para criar e manipular formulários e campos interativos.</h4>
+                <p>
+                    form: Define um formulário.<br>
+                    input: Define um campo de inserção de dados.<br>
+                    textarea: Define uma área de texto.<br>
+                    button: Define um botão.<br>
+                    select: Define uma lista suspensa.<br>
+                    option: Define uma opção dentro de uma lista suspensa.<br>
+                    optgroup: Define um grupo de opções em uma lista suspensa.<br>
+                    label: Define um rótulo para um campo de formulário.<br>
+                    fieldset: Agrupa elementos de um formulário.<br>
+                    legend: Define um título para um campo de formulário.<br>
+                    output: Define uma saída de resultado de um formulário.<br>
+                    Exemplos:
+                </p>
+                <ul>
+                    <li>Define uma área de texto e um botão.
+                        <xmp><textarea name="mensagem">Digite sua mensagem</textarea></xmp>
+                        <xmp><button type="submit">Enviar</button></xmp>
+                    </li>
+                    <li>Define uma área de texto e um botão.<br>
+                        <textarea name="mensagem">Digite sua mensagem</textarea><br>
+                        <button type="submit">Enviar</button>
+                    </li>
+                    <li>Opções em uma lista suspensa.
+                        <xmp><select name="grupo"></xmp>
+                        <xmp>   <optgroup label="Grupo 1"></xmp>
+                        <xmp>       <option value="1">Opção 1</option></xmp>
+                        <xmp>   </optgroup></xmp>
+                        <xmp></select></xmp>
+                    </li>
+                    <li>Opções em uma lista suspensa.
+                        <select name="grupo">
+                            <optgroup label="Grupo 1">
+                                <option value="1">Opção 1</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li>Elementos de um formulário
+                        <xmp><fieldset></xmp>
+                        <xmp>   <form action="/enviar" method="post"></xmp>
+                        <xmp>       <legend>Informações Pessoais</legend></xmp>
+                        <xmp>       <label for="nome">Nome:</label></xmp>
+                        <xmp>       <input type="text" id="nome" name="nome" placeholder="Seu Nome"></xmp>
+                        <xmp>   </form></xmp>
+                        <xmp></fieldset></xmp>
+                    </li>
+                    <li>Elementos de um formulário
+                        <fieldset>
+                            <form action="/enviar" method="post">
+                                <legend>Informações Pessoais</legend>
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" name="nome" placeholder="Seu Nome">
+                            </form>
+                        </fieldset>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </div>    
     <div class="ocultar" id="CSS">
