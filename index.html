@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="input" >
+    <button class="value" onclick="ver('HTML')"  id="ver">
+        <svg viewBox="0 0  16" width="20" height="20">
+            <!-- Corpo principal do ícone -->
+            <path
+                d="M2 1h12l-1.09 12.48L8 15l-4.91-1.52L2 1z"
+                fill="#E34F26"
+            />
+            <!-- Parte superior do ícone -->
+            <path
+                d="M8 13.12l3.75-1.16L11.64 3H8v10.12z"
+                fill="#EF652A"
+            />
+            <!-- Texto ou marcações no ícone -->
+            <path
+                d="M6.7 7.7H4.4l-.1-1.2h2.3L6.7 7.7zM4.4 4.7h4.5l-.1 1.2H4.4L4.4 4.7zm.2 3.5H6.6l-.2 1.7L8 9.8l.7-1.1-.4-1.6H4.5L4.6 8.2z"
+                fill="#FFF"
+            />
+        </svg>
+        HTML
+    </button>
+    <button class="value" onclick="ver('CSS')"  id="ver">
+        <svg viewBox="16" width="20" height="20">
+            <!-- Corpo principal do ícone -->
+            <path
+                d="M2 1h12l-1.09 12.48L8 15l-4.91-1.52L2 1z"
+                fill="#264DE4"
+            />
+            <!-- Parte superior do ícone -->
+            <path
+                d="M8 13.12l3.75-1.16L11.64 3H8v10.12z"
+                fill="#2965F1"
+            />
+            <!-- Texto ou marcações no ícone -->
+            <path
+                d="M6.2 7h4.4l-.3 3.2L8 11.3l-2.3-.8-.2-2.5h1.4L6.7 9H8.2l.3-1.2H5.9l.3-1h4.2l-.1 1H6.2z"
+                fill="#FFF"
+            />
+        </svg>
+        CSS
+    </button>
+    <button class="value" onclick="ver('React')"  id="ver">
+        <svg viewBox="0 0 24 24" width="20" height="20">
+            <!-- Círculo central do átomo -->
+            <circle cx="9" cy="9" r="1.8" fill="#61DAFB"/>
+            
+            <!-- Primeiro orbital do átomo -->
+            <ellipse cx="9" cy="9" rx="10" ry="4.5" fill="none" stroke="#61DAFB" stroke-width="1.5"/>
+            
+            <!-- Segundo orbital do átomo, rotacionado -->
+            <ellipse cx="9" cy="9" rx="10" ry="4.5" fill="none" stroke="#61DAFB" stroke-width="1.5" transform="rotate(60 9 9)"/>
+            
+            <!-- Terceiro orbital do átomo, rotacionado -->
+            <ellipse cx="9" cy="9" rx="10" ry="4.5" fill="none" stroke="#61DAFB" stroke-width="1.5" transform="rotate(120 9 9)"/>
+        </svg>
+        React
+    </button>
+    <button class="value" onclick="ver('JS')"  id="ver">
+        <svg viewBox="0 0 24 24" width="20" height="20">
+            <!-- Fundo do ícone -->
+            <rect width="24" height="24" fill="#F7DF1E"/>
+        
+            <!-- Letra "J" -->
+            <path d="M9 5h2v10c0 2.5-1.5 3.5-3.2 3.5-1.4 0-2.3-.3-3-1l1-2c.5.4 1 .7 1.8.7.7 0 1.4-.3 1.4-1.5V5z" fill="#000"/>
+        
+            <!-- Letra "S" -->
+            <path d="M14.2 18c.6.4 1.3.7 2.2.7 1.2 0 1.8-.6 1.8-1.3 0-.8-.6-1.1-1.6-1.6l-.6-.3c-1.7-.7-2.8-1.6-2.8-3.4 0-1.7 1.4-3 3.6-3 1.1 0 1.9.2 2.5.5l-.6 2c-.4-.2-.9-.5-1.8-.5-1 0-1.6.6-1.6 1.2 0 .8.6 1.1 1.5 1.5l.6.2c1.8.7 2.9 1.6 2.9 3.5 0 2-1.5 3.1-3.7 3.1-1.1 0-2.2-.3-2.9-.8l.7-2.1z" fill="#000"/>
+        </svg>
+        
+        JS
+    </button>
+    <button class="value" onclick="ver('Node')"  id="ver">
+        <svg viewBox="0 0 32 32" width="20" height="20">
+            <!-- Hexágono de fundo -->
+            <polygon points="16,1 30,8 30,24 16,31 2,24 2,8" fill="#339933"/>
+        
+            <!-- Texto "Node" -->
+            <path d="M9 11h1v10H9zm2 10h1v-2h1v-1H11V8h1v2h1v1h-1v6h1v1H11zm2 1h1v-1h1V9h-2v12h1zm3 0v-1h1v-1h-1v-1h1v-1h-1v-1h1v-1h-1V9h2v11h1v1h-3z" fill="#FFF"/>
+        
+            <!-- Texto ".js" abaixo de "Node" -->
+            <path d="M19.2 20.6c.4.2.8.4 1.2.4.4 0 .7-.1.7-.3 0-.2-.2-.3-.8-.5l-.6-.2c-1.1-.3-1.5-.8-1.5-1.6 0-.8.6-1.5 1.8-1.5.5 0 1 .1 1.4.3l-.2.7c-.4-.2-.8-.3-1.2-.3-.4 0-.6.2-.6.4 0 .2.3.3.8.5l.6.2c1.2.3 1.5.9 1.5 1.6 0 .8-.6 1.5-1.9 1.5-.7 0-1.2-.1-1.6-.3l.2-.8z" fill="#FFF"/>
+        </svg>
+        Node
+    </button>
+    <button class="value" onclick="ver('DevOps')"  id="ver">
+        <svg viewBox="0 0 24 24" width="20" height="20">
+            <!-- Parte esquerda do ciclo (desenvolvimento) -->
+            <path
+                d="M8 12a4 4 0 1 1 0-8 4 4 0 1 1 0 8z"
+                fill="#007ACC"
+            />
+            <!-- Parte direita do ciclo (operações) -->
+            <path
+                d="M16 12a4 4 0 1 1 0 8 4 4 0 1 1 0-8z"
+                fill="#28A745"
+            />
+            <!-- Conexão superior entre os ciclos -->
+            <path
+                d="M8 8c1.7 1.7 4.3 1.7 6 0M8 16c1.7-1.7 4.3-1.7 6 0"
+                fill="none"
+                stroke="#555"
+                stroke-width="1.5"
+            />
+        </svg>
+        
+        DevOps
+    </button>
+    </div>
+    
+    <div class="ocultar" id="HTML">
+        <h1>HTML 5</h1>
+        <h2>Principais Tags de HTML</h2>
+        <ul> 
+            <li>
+                <h3>1) Tags de Estrutura de Documento</h3>
+                <h4>Essas tags são essenciais para definir a estrutura básica e a organização do documento HTML.</h4>
+                <ul>
+                    <li>
+                        !DOCTYPE: Define o tipo do documento. <br>
+                        html: Define o documento como um HTML. <br>
+                        head: Contém informações de metadados sobre o documento. <br>
+                        title: Define o título da página no navegador. <br>
+                        body: Define o corpo do documento, onde o conteúdo visível é inserido <br> Exemplo: 
+                        <xmp><!DOCTYPE html></xmp>
+                        <xmp><html lang="pt-br"></xmp>
+                        <xmp><head></xmp>
+                        <xmp>    <meta charset="UTF-8"></xmp>
+                        <xmp>    <title>Meu Site</title></xmp>
+                        <xmp></head></xmp>
+                        <xmp><body></xmp>
+                        <xmp>    <h1>Bem-vindo ao meu site!</h1></xmp>
+                        <xmp><'/body></xmp>.             
+                    </li>
+                </ul>
+            </li> 
+            <li>
+                <h3>2) Tags de Cabeçalho e Seção</h3>
+                <h4>Essas tags definem seções, cabeçalhos e divisões de conteúdo.</h4>
+                <ul>
+                    <li>h1 a h6: Define cabeçalhos, do mais importante (h1) ao menos importante (h6)<br> Exemplo: 
+                        <xmp><h1>Título 1</h1></xmp><h1 style="text-align: left;">Título 1</h1>
+                        <xmp><h2>Título 2</h2></xmp><h2>Título 2</h2>
+                    </li>
+                    <li>header: Define o cabeçalho de uma página ou seção.<br> Exemplo: 
+                        <xmp><header></xmp>
+                        <xmp>    <h1>Cabeçalho da Página</h1></xmp>
+                        <xmp></header></xmp>
+                    </li>
+                    <li>section: Define uma seção genérica de conteúdo.<br> Exemplo: 
+                        <xmp><section></xmp>
+                        <xmp>   <h2>Conteúdo da Seção</h2></xmp>
+                        <xmp>   <p>Este é o conteúdo da seção.</p></xmp>
+                        <xmp></section></xmp>
+                    </li>
+                    <li>nav: Define um conjunto de links de navegação.<br> Exemplo: 
+                        <xmp><nav></xmp>
+                        <xmp>    <a href="#">Link 1</a></xmp>
+                        <xmp>    <a href="#">Link 2</a></xmp>
+                        <xmp></nav></xmp>
+                    </li>
+                    <li>article: Define um artigo ou conteúdo independente.<br> Exemplo: 
+                        <xmp><article></xmp>
+                        <xmp>   <h2>Artigo Principal</h2></xmp>
+                        <xmp>    <p>Este é o conteúdo de um artigo.</p></xmp>
+                        <xmp></article></xmp>
+                    </li>
+                    <li>aside: Define conteúdo lateral, como barras laterais.<br> Exemplo: 
+                        <xmp><aside></xmp>
+                        <xmp>    <h3>Barra Lateral</h3></xmp>
+                        <xmp>    <p>Este é o conteúdo da barra lateral.</p></xmp>
+                        <xmp></aside></xmp>
+                    </li>
+                    <li>footer: Define o rodapé de uma página ou seção.<br> Exemplo: 
+                        <xmp><footer></xmp>
+                        <xmp>   <p>Todos os direitos reservados &copy; Exemplo 2024</p></xmp>
+                        <xmp></footer></xmp>
+                    </li>
+                    <li>div: Define uma divisão ou contêiner genérico.<br> Exemplo: 
+                        <xmp><div></xmp>
+                        <xmp>   <h2>Divisão Principal</h2></xmp>
+                        <xmp>   <p>Este é o conteúdo da divisão.</p></xmp>
+                        <xmp><'/div></xmp>
+                    </li>
+                </ul>
+            </li> 
+            <li>
+                <h3>3) Tags de Texto e Formatação</h3>
+                <h4>Tags que afetam a aparência e o estilo do texto no documento.</h4>
+                <ul>
+                    <li>p: Define um parágrafo.<br>
+                        b: Define texto em negrito.<br>
+                        i: Define texto em itálico.<br> 
+                        em: Define texto com ênfase. <br>
+                        strong: Define texto forte (importante).<br> 
+                        small: Define texto menor.<br>
+                        sub: Define texto subscrito.<br>
+                        sup: Define texto sobrescrito.<br>
+                        br: Insere uma quebra de linha.<br>
+                        hr: Insere uma linha horizontal.<br>
+                        blockquote: Define uma citação longa.<br>
+                        q: Define uma citação curta.<br>
+                        cite: Define a citação de uma obra.<br>
+                        abbr: Define uma abreviação.<br>
+                        code: Define um trecho de código.<br>
+                        pre: Define texto pré-formatado.<br>
+                        s: Define texto tachado.<br>
+                        ins: Define texto inserido.<br>
+                        del: Define texto deletado.<br>
+                        Exemplo: <br>
+                        <p>Este é um parágrafo de texto. <b>texto em negrito</b>. <i>texto em itálico</i>. <em>em ênfase</em>. <strong>importante</strong>. <small>Texto menor ou nota de rodapé.</small>
+                        H<sub>2</sub>O (água). 10<sup>2</sup> (100). quebra de linha.<br>Texto na linha seguinte.</p>
+                        <p>Texto acima da linha horizontal.</p>
+                        <hr>
+                        <p>Texto abaixo da linha horizontal.</p>
+                        <blockquote>
+                            Esta é uma citação longa em bloco.
+                        </blockquote>                          
+                        <p>Ele disse: <q>Eu voltarei!</q></p>
+                    
+                        <p>Citação de um livro: <cite>O Senhor dos Anéis</cite>.</p>
+                    
+                        <p>A <abbr title="Organização das Nações Unidas">ONU</abbr> é uma organização internacional.</p>
+                    
+                        <p>Exemplo de código: <code>console.log('Olá, mundo!');</code></p>
+                    
+                        <pre>
+                            Este é um texto
+                        </pre>                          
+                    
+                        <p>Este é um <s>texto incorreto</s>.</p>
+                    
+                        <p>Este é um <ins>texto inserido</ins>.</p>
+                
+                        <p>Este é um <del>texto deletado</del>.</p>
+                    </li> 
+                </ul>
+            </li>
+            <li>
+                <h3>4) Tags de Listas</h3>
+                <h4>Essas tags são usadas para criar listas.</h4>
+                <ul>
+                    <li>ul: Define uma lista não ordenada (com marcadores).<br> 
+                        li: Define um item de lista.<br>Exemplo: <br>
+                        <xmp><ul></xmp>
+                        <xmp>    <li>Item 1</li></xmp>
+                        <xmp>    <li>Item 2</li></xmp>
+                        <xmp></ul></xmp>
+                    </li>
+                    <li>ol: Define uma lista ordenada (numerada).<br> Exemplo: <br>
+                        <xmp><ol></xmp>
+                        <xmp>    <li>Item 1</li></xmp>
+                        <xmp>    <li>Item 2</li></xmp>
+                        <xmp></ol></xmp>
+                    </li>
+                    <li>dl: Define uma lista de definições.<br>
+                        dt: Define um termo dentro da lista de definições.<br>
+                        dd: Define a descrição do termo na lista de definições.<br> Exemplo: <br>
+                        <xmp><dl></xmp>
+                        <xmp>    <dt>JavaScript</dt></xmp>
+                        <xmp>    <dd>Linguagem de programação para interatividade.</dd></xmp>
+                        <xmp></dl></xmp>  
+                        <dl>
+                             <dt>JavaScript</dt>
+                            <dd>Linguagem de programação para interatividade.</dd>
+                        </dl> 
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>5) Tags de Tabela</h3>
+                <h4>Essas tags são usadas para construir tabelas de dados.</h4>
+                <p>
+                    table: Define uma tabela.<br>
+                    tr: Define uma linha na tabela.<br>
+                    th: Define uma célula de cabeçalho de uma tabela.<br>
+                    td: Define uma célula comum em uma tabela.<br>
+                    thead: Define o cabeçalho da tabela.<br>
+                    tbody: Define o corpo da tabela.<br>
+                    tfoot: Define o rodapé da tabela.<br>
+                    caption: Define o título da tabela.<br>
+                    col: Define atributos para uma coluna.<br>
+                    colgroup: Define um grupo de colunas.<br>
+                    Exemplos:
+                </p>
+                <ul>
+                    <li>
+                        <xmp><table></xmp>
+                        <xmp>   <tr><th>Nome</th><th>Idade</th></tr></xmp>
+                        <xmp>   <tr><td>João</td><td>30</td></tr></xmp>
+                        <xmp></table></xmp>
+                        <table>
+                            <tr><th>Nome</th><th>Idade</th></tr>
+                            <tr><td>João</td><td>30</td></tr>
+                        </table>
+                    </li>
+                    <li>
+                        <xmp><table></xmp>
+                        <xmp>   <thead></xmp>
+                        <xmp>       <colgroup></xmp>
+                        <xmp>       <col style="background-color:yellow"></xmp>
+                        <xmp>       </colgroup></xmp>
+                        <xmp>       <caption>Usuários</caption></xmp>
+                        <xmp>       <tr><th>Nome</th><th>Idade</th></tr></xmp>
+                        <xmp>   </thead></xmp>
+                        <xmp>   <tbody></xmp>
+                        <xmp>       <tr><td>Maria</td><td>28</td></tr></xmp>
+                        <xmp>   </tbody></xmp>
+                        <xmp>   <tfoot></xmp>
+                        <xmp>       <tr><td>Total</td><td>100</td></tr></xmp>
+                        <xmp>   </tfoot></xmp>
+                        <xmp></table></xmp>
+                        <table>
+                            <thead>
+                                <colgroup>
+                                    <col style="background-color:yellow">
+                                </colgroup>
+                                <caption>Usuários</caption>
+                                <tr><th>Nome</th><th>Idade</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Maria</td><td>28</td></tr>
+                            </tbody>
+                            <tfoot>
+                                <tr><td>Total</td><td>100</td></tr>
+                            </tfoot>
+                        </table>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>6) Tags de Formulário e Interação</h3>
+                <h4>Essas tags são usadas para criar e manipular formulários e campos interativos.</h4>
+                <p>
+                    form: Define um formulário.<br>
+                    input: Define um campo de inserção de dados.<br>
+                    textarea: Define uma área de texto.<br>
+                    button: Define um botão.<br>
+                    select: Define uma lista suspensa.<br>
+                    option: Define uma opção dentro de uma lista suspensa.<br>
+                    optgroup: Define um grupo de opções em uma lista suspensa.<br>
+                    label: Define um rótulo para um campo de formulário.<br>
+                    fieldset: Agrupa elementos de um formulário.<br>
+                    legend: Define um título para um campo de formulário.<br>
+                    output: Define uma saída de resultado de um formulário.<br>
+                    Exemplos:
+                </p>
+                <ul>
+                    <li>Define uma área de texto e um botão.
+                        <xmp><textarea name="mensagem">Digite sua mensagem</textarea></xmp>
+                        <xmp><button type="submit">Enviar</button></xmp>
+                    </li>
+                    <li>Define uma área de texto e um botão.<br>
+                        <textarea name="mensagem">Digite sua mensagem</textarea><br>
+                        <button type="submit">Enviar</button>
+                    </li>
+                    <li>Opções em uma lista suspensa.
+                        <xmp><select name="grupo"></xmp>
+                        <xmp>   <optgroup label="Grupo 1"></xmp>
+                        <xmp>       <option value="1">Opção 1</option></xmp>
+                        <xmp>   </optgroup></xmp>
+                        <xmp></select></xmp>
+                    </li>
+                    <li>Opções em uma lista suspensa.
+                        <select name="grupo">
+                            <optgroup label="Grupo 1">
+                                <option value="1">Opção 1</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li>Elementos de um formulário
+                        <xmp><fieldset></xmp>
+                        <xmp>   <form action="/enviar" method="post"></xmp>
+                        <xmp>       <legend>Informações Pessoais</legend></xmp>
+                        <xmp>       <label for="nome">Nome:</label></xmp>
+                        <xmp>       <input type="text" id="nome" name="nome" placeholder="Seu Nome"></xmp>
+                        <xmp>   </form></xmp>
+                        <xmp></fieldset></xmp>
+                    </li>
+                    <li>Elementos de um formulário
+                        <fieldset>
+                            <form action="/enviar" method="post">
+                                <legend>Informações Pessoais</legend>
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" name="nome" placeholder="Seu Nome">
+                            </form>
+                        </fieldset>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>    
+    <div class="ocultar" id="CSS">
+        <h1>CSS</h1>
+    
+        <h3 style="text-align: center;">Principais Propriedades e Conceitos de CSS:</h3>
+        <p style="text-align: center;">
+            CSS (Cascading Style Sheets) é uma linguagem utilizada para descrever a apresentação de um documento escrito em HTML ou XML. 
+            Com CSS, é possível controlar o layout, cores, fontes e outros aspectos visuais da página, permitindo criar designs atraentes e responsivos. 
+            Além das propriedades básicas, CSS oferece um vasto conjunto de recursos que podem ser usados para estilizar de maneira sofisticada. 
+            A capacidade de criar animações, gradientes e efeitos visuais tornam o CSS uma ferramenta essencial para desenvolvedores web.
+        </p>
+        <ul>
+            <li>
+                <strong>color:</strong>
+                Define a cor do texto em um elemento. Pode ser especificada com nomes de cores, valores hexadecimais, RGB ou HSL.
+            </li>
+            <li>
+                <strong>background-color:</strong>
+                Define a cor de fundo de um elemento. Assim como a cor do texto, pode ser especificada com diferentes métodos.
+            </li>
+            <li>
+                <strong>font-size:</strong>
+                Define o tamanho da fonte do texto. Pode ser especificado em pixels (px), em (em), porcentagem (%), entre outros.
+            </li>
+            <li>
+                <strong>margin:</strong>
+                Define o espaço externo ao redor de um elemento. Pode ser usado para separar elementos uns dos outros.
+            </li>
+            <li>
+                <strong>padding:</strong>
+                Define o espaço interno entre o conteúdo de um elemento e sua borda. É útil para adicionar espaço ao redor do conteúdo dentro de um elemento.
+            </li>
+            <li>
+                <strong>border:</strong>
+                Adiciona uma borda ao redor de um elemento. Pode ser configurada com largura, estilo e cor.
+            </li>
+            <li>
+                <strong>display:</strong>
+                Controla como um elemento é exibido na página. Pode ser configurado como <strong>block</strong>, <strong>inline</strong>, <strong>flex</strong>, <strong>grid</strong>, entre outros.
+            </li>
+            <li>
+                <strong>position:</strong>
+                Define o método de posicionamento de um elemento. Pode ser <strong>static</strong>, <strong>relative</strong>, <strong>absolute</strong>, ou <strong>fixed</strong>.
+            </li>
+            <li>
+                <strong>flex:</strong>
+                Utilizado em layout de flexbox para definir como os itens dentro de um contêiner flexível devem crescer e encolher.
+            </li>
+            <li>
+                <strong>grid:</strong>
+                Utilizado em layout de grid para criar layouts baseados em grades, oferecendo um controle mais preciso sobre a estrutura da página.
+            </li>
+            <li>
+                <strong>text-align:</strong>
+                Define o alinhamento do texto em um elemento. Os valores podem ser <strong>left</strong>, <strong>right</strong>, <strong>center</strong> e <strong>justify</strong>.
+            </li>
+            <li>
+                <strong>overflow:</strong>
+                Controla como o conteúdo que excede as dimensões de um elemento é tratado. Pode ser <strong>visible</strong>, <strong>hidden</strong>, <strong>scroll</strong>, ou <strong>auto</strong>.
+            </li>
+            <li>
+                <strong>opacity:</strong>
+                Define a transparência de um elemento, variando de <strong>0</strong> (completamente transparente) a <strong>1</strong> (completamente opaco).
+            </li>
+            <li>
+                <strong>box-shadow:</strong>
+                Adiciona uma sombra ao redor de um elemento, permitindo criar efeitos de profundidade.
+            </li>
+            <li>
+                <strong>transition:</strong>
+                Permite a alteração suave das propriedades CSS ao longo do tempo, melhorando a experiência do usuário.
+            </li>
+            <li>
+                <strong>animation:</strong>
+                Permite criar animações complexas, definindo quadros-chave (keyframes) que descrevem a mudança ao longo do tempo.
+            </li>
+            <li>
+                <strong>gradients:</strong>
+                Usados para criar transições de cor, como gradientes lineares e radiais, que podem ser aplicados a fundos.
+            </li>
+            <li>
+                <strong>filter:</strong>
+                Aplica efeitos visuais como desfoque, brilho e saturação a elementos.
+            </li>
+            <li>
+                <strong>z-index:</strong>
+                Controla a sobreposição de elementos, determinando qual elemento deve aparecer na frente ou atrás dos outros.
+            </li>
+            <li>
+                <strong>cursor:</strong>
+                Altera o tipo de cursor que aparece ao passar o mouse sobre um elemento, como <strong>pointer</strong>, <strong>crosshair</strong>, e outros.
+            </li>
+        </ul>
+    </div>
+    
+    
+    <div class="ocultar" id="JS">
+        <h1>JavaScript no Backend</h1>
+        <h2>Funções e Principais Utilizações no Backend</h2>
+        <p>
+            JavaScript no backend é amplamente utilizado para construir aplicações robustas e escaláveis. 
+            As tecnologias associadas ao JavaScript no backend permitem a criação de servidores, APIs e 
+            manipulação de bancos de dados, oferecendo uma experiência de desenvolvimento unificada.
+        </p>
+        <h3>Principais Tecnologias e Conceitos</h3>
+    
+        <ul>
+                <p>Frameworks de Aplicações:</p>
+                <p>
+                    Existem vários frameworks que utilizam JavaScript,
+                    além do Node.js, para construir aplicações. Exemplos incluem:
+                </p>
+
+                    <li>
+                        <strong>AdonisJS:</strong> 
+                        Um framework MVC (Model-View-Controller) para construir 
+                        aplicações web de forma organizada e eficiente.
+                    </li>
+                    <li>
+                        <strong>Sails.js:</strong>
+                         Um framework MVC que se destaca na construção de APIs e 
+                         aplicações em tempo real.
+                        </li>
+                    <li>
+                        <strong>Express.js:</strong> 
+                        Um framework minimalista e flexível para Node.js, usado para 
+                    construir servidores e APIs de forma rápida e eficiente. Sua simplicidade e leveza o 
+                    tornam uma escolha popular para projetos de todos os tamanhos, 
+                    especialmente para criar APIs RESTful.
+                    </li>
+                
+                <li>
+                    <strong>Microservices:</strong>
+                    JavaScript é utilizado na construção de arquiteturas de microserviços, onde a aplicação é dividida em pequenos serviços independentes. 
+                    Cada microserviço pode ser desenvolvido e implantado separadamente, facilitando a escalabilidade e a manutenção.
+                </li>
+    
+            <li>
+                <strong>APIs GraphQL:</strong>
+                GraphQL é uma alternativa ao REST, permitindo que os clientes solicitem exatamente os dados de que precisam. 
+                Com bibliotecas como Apollo Server, você pode implementar APIs GraphQL em JavaScript, proporcionando uma comunicação mais eficiente entre o cliente e o servidor.
+            </li>
+    
+            <li>
+                <strong>Banco de Dados:</strong>
+                JavaScript é frequentemente usado em conjunto com bancos de dados NoSQL, como MongoDB, que permite armazenar dados em um formato JSON flexível. 
+                Além disso, pode ser usado com bancos de dados SQL, utilizando ORMs como Sequelize e TypeORM.
+            </li>
+    
+            <li>
+                <strong>Testes Automatizados:</strong>
+                O uso de JavaScript no backend permite a implementação de testes automatizados com ferramentas como Mocha, Chai e Jest. 
+                Esses testes garantem que a lógica de negócios funcione conforme o esperado e ajudam a prevenir regressões.
+            </li>
+    
+            <li>
+                <strong>Segurança:</strong>
+                A segurança em aplicações backend é crucial. Implementações de autenticação e autorização com bibliotecas como Passport.js 
+                e o uso de JSON Web Tokens (JWT) para gerenciar sessões são práticas comuns para garantir a segurança das aplicações.
+            </li>
+    
+            <li>
+                <strong>Serviços em Nuvem:</strong>
+                O uso de serviços em nuvem, como AWS Lambda ou Google Cloud Functions, permite que desenvolvedores utilizem JavaScript para 
+                construir funções serverless, que são executadas em resposta a eventos, reduzindo a necessidade de gerenciamento de servidores.
+            </li>
+    
+            <li>
+                <strong>Integração com Outras Tecnologias:</strong>
+                JavaScript pode ser integrado com outras linguagens e tecnologias. Por exemplo, você pode usar JavaScript para orquestrar 
+                serviços escritos em Python ou Java, facilitando a comunicação entre diferentes partes da aplicação.
+            </li>
+        </ul>
+        
+        <h1>JavaScript no Frontend</h1>
+        <h2>Funções e Principais Utilizações no Frontend</h2>
+        <p>
+            JavaScript é uma linguagem de programação fundamental para o desenvolvimento web. 
+            Ela permite adicionar interatividade, manipular o conteúdo da página e criar 
+            experiências dinâmicas para o usuário.
+        </p>
+        <h3>Principais Tags</h3>
+        <ul>
+            <li>
+                <strong>script:</strong> 
+                A tag "script" é usada para incluir código JavaScript em uma página HTML. 
+                Pode ser interna ou externa.
+            </li>
+            <li>
+                <strong>div:</strong> 
+                A tag "div" é uma das mais usadas e serve como um contêiner genérico para agrupar elementos HTML. 
+                <div id="inner-div">
+                    <h1>Bem-vindo ao meu site</h1>
+            
+                    <p>Este é um parágrafo dentro de uma div.</p>
+            
+                </div>
+            </li>
+            
+            <li>
+                
+                <strong>span:</strong> 
+                A tag "span" é um contêiner inline usado para apli
+                car estilos ou JavaScript     
+                a partes específicas do texto sem quebrar a linha.
+                <p>Este é um texto com um <span class="highlight">destaque</span>.</p>
+            
+            </li>
+            <li>
+                <strong>input:</strong> 
+                A tag "input" é usada em formulários para criar diferentes tipos de campos de entrada, 
+                como texto, senhas, botões de rádio, checkboxes, entre outros.
+                <input type="text" id="username" placeholder="Digite seu nome">
+                <input type="submit" value="Enviar" onclick="showMessage()">
+                <p id="message" style="margin-top: 10px; color: green;"></p> <!-- Parágrafo para exibir a mensagem -->
+            </li>
+            <li>
+                <strong>form:</strong> 
+                A tag "form" é usada para criar um formulário HTML que coleta dados do usuário 
+                e os envia para um servidor ou processa com JavaScript.
+                <form id="loginForm" onsubmit="handleLogin(event)">
+                    <input type="text" id="username" placeholder="Digite seu nome" required>
+                    <input type="password" id="password" placeholder="Digite sua senha" required>
+                    <input type="submit" value="Login">
+                </form>
+            </li>
+            <li>
+                <strong>button:</strong> 
+                A tag "button" é usada para criar um botão clicável.
+                <button onclick="handleClick()">Clique aqui</button>
+                <p id="message" style="display: none; color: green;">Botão clicado!</p>
+            </li>
+            <li>
+                <strong>ul e li:</strong> 
+                A tag "ul" cria uma lista não ordenada, enquanto "li" define cada item da lista.
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </li>
+            <li>
+                <strong>a:</strong> 
+                A tag "a" é usada para criar links de hipertexto que podem levar há canais que podem salvar sua vida de programador.
+                <a href="https://www.youtube.com/@theinitcode" target="_blank">Visite o site</a>
+            </li>
+            <li>
+                <strong>img:</strong> 
+                A tag "img" usamos para colocar uma imagem em uma página HTML.
+                <br> <!-- rsrs gambiara e preguiça tmb -->
+                <br>
+                <img src="initcode.png" alt="Imagem estilizada" class="img-bonitinha">
+            </li>
+            <li>
+                <strong>select e option:</strong> 
+                A tag "select" cria uma lista suspensa de opções, enquanto "option" define cada item da lista.
+                <select id="country">
+                    <option value="BR">Brasil</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="DE">Alemanha</option>
+                </select>
+            </li>
+            <li>
+                <strong>table, tr, td, th:</strong> 
+                Essas tags são usadas para criar tabelas em HTML. "table" define a tabela, "tr" define as linhas, 
+                "td" define as células, e "th" define os cabeçalhos das colunas.
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                    </tr>
+                    <tr>
+                        <td>João</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Ana</td>
+                        <td>25</td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <strong>meta:</strong> 
+                A tag "meta" fornece metadados sobre o documento HTML, como a codificação de caracteres, 
+                informações de viewport e descrições para motores de busca.
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="Descrição do site">
+            </li>
+        </ul>
+
+        <script>
+            function handleClick() {
+                var messageElement = document.getElementById("message");
+                messageElement.style.display = "block";
+            }
+
+            function handleLogin(event) {
+               event.preventDefault();
+               alert("Usuário logado! É fake ta logado não cara kkk");        
+            }
+
+            function showMessage() {
+               const username = document.getElementById('username').value;
+               const messageElement = document.getElementById('message');
+               messageElement.textContent = `Seu nome é ${username}`;
+           }
+        </script>
+    </div>
+
+    <div class="ocultar" id="Node">
+        <h1>Node.js</h1>
+        
+        <h2>O que é Node.js?</h2>
+        <p>
+            Node.js é uma plataforma de desenvolvimento que permite executar código JavaScript no lado do servidor rapida e eficiente.  
+            O principal diferencial que o Node.js fornece é o modelo de I/O que não bloqueia e é orientado a eventos, que permite que 
+            aplicações realizem varias operações simultaneamente sem atrapalhar no seu desempenho.
+        </p>
+        
+        <h3>Principais Características do Node.js</h3>
+        <ul>
+            <li>
+                <strong>Assíncrono e Orientado a Eventos:</strong> Node.js utiliza um modelo de programação assíncrono, onde as operações de entrada e saída (I/O) são realizadas de forma não bloqueante. Isso significa que, enquanto uma operação está aguardando por uma resposta (como uma consulta ao banco de dados), outras operações podem continuar a ser executadas, aumentando a eficiência do código. O uso de callbacks e promessas facilita o gerenciamento de operações assíncronas.
+            </li>
+            <li>
+                <strong>Single Thread:</strong> Embora o Node.js seja single-threaded, ele pode lidar com muitas conexões simultâneas. Isso é possível graças ao loop de eventos, que gerencia as requisições em um único thread, permitindo que a aplicação continue respondendo a novas requisições enquanto aguarda o término de operações de I/O.
+            </li>
+            <li>
+                <strong>NPM (Node Package Manager):</strong> O NPM é um poderoso gerenciador de pacotes que facilita a instalação, atualização e gerenciamento de bibliotecas e dependências para projetos Node.js. Com milhões de pacotes disponíveis, os desenvolvedores podem encontrar soluções prontas para diversas necessidades, economizando tempo e esforço no desenvolvimento.
+            </li>
+            <li>
+                <strong>Comunidade Ativa:</strong> A comunidade de Node.js é uma das mais vibrantes e colaborativas. Isso resulta em um ecossistema rico em pacotes e frameworks, como Express.js, Koa.js e Nest.js, que simplificam a construção de aplicações robustas. A troca constante de conhecimento e a contribuição para projetos open source ajudam a manter a tecnologia atualizada e relevante.
+            </li>
+            <li>
+                <strong>Desempenho:</strong> O Node.js é conhecido por seu desempenho superior, especialmente em aplicações que exigem alta concorrência e que fazem uso intensivo de operações de I/O. Seu modelo não bloqueante permite que aplicações escalem facilmente e suportem muitas conexões simultâneas sem deteriorar o tempo de resposta.
+            </li>
+        </ul>
+    
+        <h3>Principais Casos de Uso do Node.js</h3>
+        <ul>
+            <li>
+                <strong>APIs RESTful:</strong> O Node.js é frequentemente utilizado para construir APIs RESTful, que servem como intermediárias entre front-end e back-end. As APIs permitem que aplicações web e móveis comuniquem-se eficientemente, trocando dados em tempo real. O framework Express.js, por exemplo, torna a construção de APIs mais rápida e intuitiva.
+            </li>
+            <li>
+                <strong>Aplicações em Tempo Real:</strong> Com sua natureza assíncrona e suporte a WebSockets, o Node.js é ideal para aplicações que requerem comunicação em tempo real, como chats, jogos online e plataformas de colaboração. Essas aplicações podem enviar e receber dados instantaneamente, proporcionando uma experiência interativa aos usuários.
+            </li>
+            <li>
+                <strong>Microserviços:</strong> A arquitetura de microserviços é uma abordagem em que uma aplicação é dividida em serviços menores e independentes. O Node.js é uma escolha popular para essa arquitetura, pois permite que cada microserviço seja desenvolvido, testado e implantado separadamente, facilitando a escalabilidade e a manutenção.
+            </li>
+            <li>
+                <strong>Serviços em Nuvem:</strong> O Node.js é amplamente utilizado para criar funções serverless em plataformas de nuvem, como AWS Lambda e Google Cloud Functions. Essas funções são executadas em resposta a eventos, eliminando a necessidade de gerenciamento de servidores e permitindo que desenvolvedores se concentrem na lógica de negócios.
+            </li>
+        </ul>
+    </div>
+    
+
+    <div class="ocultar" id="React">
+        <h1>React no Frontend</h1>
+        <h2>Estruturas, Componentes e Como São Utilizados</h2>
+        <p>
+            React é uma biblioteca JavaScript para criar interfaces de usuário. Ele permite 
+            dividir a interface em componentes reutilizáveis e gerenciar o estado da aplicação.
+        </p>
+        
+        <h3>Principais Conceitos</h3>
+    
+        <ul>
+            <li>
+                <strong>Componentes:</strong> 
+                Em React, componentes são blocos de construção que representam partes da interface. 
+                Eles podem ser <em>funcionais</em> (escritos como funções) ou <em>de classe</em>.
+                <br>
+                <p>Exemplo de componente funcional:</p>
+                <code>
+                    function Welcome() &#123; return &lt;h1&gt;Bem-vindo ao site!&lt;/h1&gt;; &#125;
+                </code>
+            </li>
+            
+            <li>
+                <strong>JSX:</strong> 
+                JSX é uma extensão de sintaxe que permite escrever HTML dentro do JavaScript. 
+                Ele facilita a criação de interfaces React de forma mais clara e intuitiva.
+                <br>
+                <p>Exemplo de JSX:</p>
+                <code>
+                    const elemento = &lt;h1&gt;Olá, Mundo!&lt;/h1&gt;;
+                </code>
+            </li>
+    
+            <li>
+                <strong>Props:</strong> 
+                As <em>props</em> (abreviação de "propriedades") são valores passados para os componentes, 
+                permitindo que eles sejam reutilizados com diferentes dados.
+                <br>
+                <p>Exemplo de uso de props:</p>
+                <code>
+                    function Usuario(props) &#123; return &lt;p&gt;Nome: &#123;props.nome&#125;&lt;/p&gt;; &#125;
+                </code>
+            </li>
+    
+            <li>
+                <strong>Estado (State):</strong> 
+                O estado armazena dados internos do componente que podem mudar ao longo do tempo, 
+                permitindo atualizar a interface sem recarregar a página.
+                <br>
+                <p>Exemplo de uso de estado:</p>
+                <code>
+                    const [contador, setContador] = useState(0);
+                </code>
+            </li>
+    
+            <li>
+                <strong>Eventos:</strong> 
+                Eventos em React são escritos em camelCase, como <em>onClick</em> e <em>onChange</em>. 
+                Eles permitem responder às ações do usuário.
+                <br>
+                <p>Exemplo de evento:</p>
+                <code>
+                    &lt;button onClick=&#123;&#40;&#41; => alert('Clique!')&#125;&gt;Clique aqui&lt;/button&gt;
+                </code>
+            </li>
+    
+            <li>
+                <strong>Renderização Condicional:</strong> 
+                A renderização condicional permite mostrar diferentes elementos com base no estado ou props.
+                <br>
+                <p>Exemplo:</p>
+                <code>
+                    &#123;isLoggedIn ? &lt;p&gt;Bem-vindo!&lt;/p&gt; : &lt;p&gt;Faça login.&lt;/p&gt;&#125;
+                </code>
+            </li>
+    
+            <li>
+                <strong>Listas e Chaves:</strong> 
+                Em React, listas são renderizadas usando <code>map()</code>. Cada item deve ter uma <em>key</em> única.
+                <br>
+                <p>Exemplo de lista:</p>
+                <code>
+                    &#123;itens.map((item) => &lt;li key=&#123;item.id&#125;&gt;&#123;item.texto&#125;&lt;/li&gt;)&#125;
+                </code>
+            </li>
+    
+            <li>
+                <strong>useEffect:</strong> 
+                O hook <em>useEffect</em> é usado para executar efeitos colaterais, como buscar dados, após a renderização.
+                <br>
+                <p>Exemplo de uso:</p>
+                <code>
+                    useEffect(() => &#123; console.log("Componente montado"); &#125;, []);
+                </code>
+            </li>
+    
+            <li>
+                <strong>useContext:</strong> 
+                O <em>useContext</em> permite compartilhar dados entre componentes sem precisar passar props manualmente.
+                <br>
+                <p>Exemplo de uso:</p>
+                <code>
+                    const valor = useContext(Contexto);
+                </code>
+            </li>
+            
+            <li>
+                <strong>useRef:</strong> 
+                <em>useRef</em> cria uma referência mutável para armazenar um valor ou referenciar um elemento do DOM.
+                <br>
+                <p>Exemplo de uso:</p>
+                <code>
+                    const inputRef = useRef(null);
+                </code>
+            </li>
+            
+            <li>
+                <strong>Fragmentos:</strong> 
+                Fragmentos permitem agrupar elementos sem adicionar um elemento extra no DOM.
+                <br>
+                <p>Exemplo:</p>
+                <code>
+                    &lt;&gt; &lt;p&gt;Texto 1&lt;/p&gt; &lt;p&gt;Texto 2&lt;/p&gt; &lt;/&gt;
+                </code>
+            </li>
+        </ul>
+    </div>
+      
+    
+    <div class="ocultar" id="Node">
+        <h1>Node JS</h1>
+        <h2>Seu papel no backend e na criação de servclass=" " idores </h2>
+    </div>  
+    
+    <div class="ocultar" id="DevOps">
+        <h1>DevOps (GHPages e PM2/Docker)</h1>
+        <h2>GitHub Pages</h2>
+        <h2>PM2 gerenciar processos Node.js</h2>
+        <h2>Imagem Docker</h2>
+        <h2>Dockerfile e Docker Compose</h2>
+    </div>
+</body>
+</html>
