@@ -757,9 +757,133 @@
     
 
     <div class="ocultar" id="React">
-        <h1>React</h1>
-        <h2>Estruturas, componentes e como eles são utilizados</h2>
-    </div>  
+        <h1>React no Frontend</h1>
+        <h2>Estruturas, Componentes e Como São Utilizados</h2>
+        <p>
+            React é uma biblioteca JavaScript para criar interfaces de usuário. Ele permite 
+            dividir a interface em componentes reutilizáveis e gerenciar o estado da aplicação.
+        </p>
+        
+        <h3>Principais Conceitos</h3>
+    
+        <ul>
+            <li>
+                <strong>Componentes:</strong> 
+                Em React, componentes são blocos de construção que representam partes da interface. 
+                Eles podem ser <em>funcionais</em> (escritos como funções) ou <em>de classe</em>.
+                <br>
+                <p>Exemplo de componente funcional:</p>
+                <code>
+                    function Welcome() &#123; return &lt;h1&gt;Bem-vindo ao site!&lt;/h1&gt;; &#125;
+                </code>
+            </li>
+            
+            <li>
+                <strong>JSX:</strong> 
+                JSX é uma extensão de sintaxe que permite escrever HTML dentro do JavaScript. 
+                Ele facilita a criação de interfaces React de forma mais clara e intuitiva.
+                <br>
+                <p>Exemplo de JSX:</p>
+                <code>
+                    const elemento = &lt;h1&gt;Olá, Mundo!&lt;/h1&gt;;
+                </code>
+            </li>
+    
+            <li>
+                <strong>Props:</strong> 
+                As <em>props</em> (abreviação de "propriedades") são valores passados para os componentes, 
+                permitindo que eles sejam reutilizados com diferentes dados.
+                <br>
+                <p>Exemplo de uso de props:</p>
+                <code>
+                    function Usuario(props) &#123; return &lt;p&gt;Nome: &#123;props.nome&#125;&lt;/p&gt;; &#125;
+                </code>
+            </li>
+    
+            <li>
+                <strong>Estado (State):</strong> 
+                O estado armazena dados internos do componente que podem mudar ao longo do tempo, 
+                permitindo atualizar a interface sem recarregar a página.
+                <br>
+                <p>Exemplo de uso de estado:</p>
+                <code>
+                    const [contador, setContador] = useState(0);
+                </code>
+            </li>
+    
+            <li>
+                <strong>Eventos:</strong> 
+                Eventos em React são escritos em camelCase, como <em>onClick</em> e <em>onChange</em>. 
+                Eles permitem responder às ações do usuário.
+                <br>
+                <p>Exemplo de evento:</p>
+                <code>
+                    &lt;button onClick=&#123;&#40;&#41; => alert('Clique!')&#125;&gt;Clique aqui&lt;/button&gt;
+                </code>
+            </li>
+    
+            <li>
+                <strong>Renderização Condicional:</strong> 
+                A renderização condicional permite mostrar diferentes elementos com base no estado ou props.
+                <br>
+                <p>Exemplo:</p>
+                <code>
+                    &#123;isLoggedIn ? &lt;p&gt;Bem-vindo!&lt;/p&gt; : &lt;p&gt;Faça login.&lt;/p&gt;&#125;
+                </code>
+            </li>
+    
+            <li>
+                <strong>Listas e Chaves:</strong> 
+                Em React, listas são renderizadas usando <code>map()</code>. Cada item deve ter uma <em>key</em> única.
+                <br>
+                <p>Exemplo de lista:</p>
+                <code>
+                    &#123;itens.map((item) => &lt;li key=&#123;item.id&#125;&gt;&#123;item.texto&#125;&lt;/li&gt;)&#125;
+                </code>
+            </li>
+    
+            <li>
+                <strong>useEffect:</strong> 
+                O hook <em>useEffect</em> é usado para executar efeitos colaterais, como buscar dados, após a renderização.
+                <br>
+                <p>Exemplo de uso:</p>
+                <code>
+                    useEffect(() => &#123; console.log("Componente montado"); &#125;, []);
+                </code>
+            </li>
+    
+            <li>
+                <strong>useContext:</strong> 
+                O <em>useContext</em> permite compartilhar dados entre componentes sem precisar passar props manualmente.
+                <br>
+                <p>Exemplo de uso:</p>
+                <code>
+                    const valor = useContext(Contexto);
+                </code>
+            </li>
+            
+            <li>
+                <strong>useRef:</strong> 
+                <em>useRef</em> cria uma referência mutável para armazenar um valor ou referenciar um elemento do DOM.
+                <br>
+                <p>Exemplo de uso:</p>
+                <code>
+                    const inputRef = useRef(null);
+                </code>
+            </li>
+            
+            <li>
+                <strong>Fragmentos:</strong> 
+                Fragmentos permitem agrupar elementos sem adicionar um elemento extra no DOM.
+                <br>
+                <p>Exemplo:</p>
+                <code>
+                    &lt;&gt; &lt;p&gt;Texto 1&lt;/p&gt; &lt;p&gt;Texto 2&lt;/p&gt; &lt;/&gt;
+                </code>
+            </li>
+        </ul>
+    </div>
+      
     
     <div class="ocultar" id="Node">
         <h1>Node JS</h1>
