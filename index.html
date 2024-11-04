@@ -506,16 +506,29 @@
         <h3>Principais Tecnologias e Conceitos</h3>
     
         <ul>
-                <strong>Frameworks de Aplicações:</strong>
-                Existem vários frameworks que utilizam JavaScript, além do Node.js, para construir aplicações. Exemplos incluem:
-                <ul>
-                    <li><strong>AdonisJS:</strong> Um framework MVC (Model-View-Controller) para construir aplicações web de forma organizada e eficiente.</li>
-                    <li><strong>Sails.js:</strong> Um framework MVC que se destaca na construção de APIs e aplicações em tempo real.</li>
-                    <li><strong>Express.js:</strong> Um framework minimalista e flexível para Node.js, usado para 
+                <p>Frameworks de Aplicações:</p>
+                <p>
+                    Existem vários frameworks que utilizam JavaScript,
+                    além do Node.js, para construir aplicações. Exemplos incluem:
+                </p>
+
+                    <li>
+                        <strong>AdonisJS:</strong> 
+                        Um framework MVC (Model-View-Controller) para construir 
+                        aplicações web de forma organizada e eficiente.
+                    </li>
+                    <li>
+                        <strong>Sails.js:</strong>
+                         Um framework MVC que se destaca na construção de APIs e 
+                         aplicações em tempo real.
+                        </li>
+                    <li>
+                        <strong>Express.js:</strong> 
+                        Um framework minimalista e flexível para Node.js, usado para 
                     construir servidores e APIs de forma rápida e eficiente. Sua simplicidade e leveza o 
                     tornam uma escolha popular para projetos de todos os tamanhos, 
                     especialmente para criar APIs RESTful.
-                </ul>
+                    </li>
                 
                 <li>
                     <strong>Microservices:</strong>
@@ -599,15 +612,16 @@
                 A tag "input" é usada em formulários para criar diferentes tipos de campos de entrada, 
                 como texto, senhas, botões de rádio, checkboxes, entre outros.
                 <input type="text" id="username" placeholder="Digite seu nome">
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" onclick="showMessage()">
+                <p id="message" style="margin-top: 10px; color: green;"></p> <!-- Parágrafo para exibir a mensagem -->
             </li>
             <li>
                 <strong>form:</strong> 
                 A tag "form" é usada para criar um formulário HTML que coleta dados do usuário 
                 e os envia para um servidor ou processa com JavaScript.
-                <form id="loginForm">
-                    <input type="text" id="username" placeholder="Digite seu nome">
-                    <input type="password" id="password" placeholder="Digite sua senha">
+                <form id="loginForm" onsubmit="handleLogin(event)">
+                    <input type="text" id="username" placeholder="Digite seu nome" required>
+                    <input type="password" id="password" placeholder="Digite sua senha" required>
                     <input type="submit" value="Login">
                 </form>
             </li>
@@ -615,6 +629,7 @@
                 <strong>button:</strong> 
                 A tag "button" é usada para criar um botão clicável.
                 <button onclick="handleClick()">Clique aqui</button>
+                <p id="message" style="display: none; color: green;">Botão clicado!</p>
             </li>
             <li>
                 <strong>ul e li:</strong> 
@@ -633,7 +648,7 @@
             <li>
                 <strong>img:</strong> 
                 A tag "img" usamos para colocar uma imagem em uma página HTML.
-                <br> <!-- rsrs gambiara e preguiça -->
+                <br> <!-- rsrs gambiara e preguiça tmb -->
                 <br>
                 <img src="initcode.png" alt="Imagem estilizada" class="img-bonitinha">
             </li>
@@ -674,7 +689,72 @@
                 <meta name="description" content="Descrição do site">
             </li>
         </ul>
+
+        <script>
+            function handleClick() {
+                var messageElement = document.getElementById("message");
+                messageElement.style.display = "block";
+            }
+
+            function handleLogin(event) {
+               event.preventDefault();
+               alert("Usuário logado! É fake ta logado não cara kkk");        
+            }
+
+            function showMessage() {
+               const username = document.getElementById('username').value;
+               const messageElement = document.getElementById('message');
+               messageElement.textContent = `Seu nome é ${username}`;
+           }
+        </script>
     </div>
+
+    <div class="ocultar" id="Node">
+        <h1>Node.js</h1>
+        
+        <h2>O que é Node.js?</h2>
+        <p>
+            Node.js é uma plataforma de desenvolvimento que permite executar código JavaScript no lado do servidor rapida e eficiente.  
+            O principal diferencial que o Node.js fornece é o modelo de I/O que não bloqueia e é orientado a eventos, que permite que 
+            aplicações realizem varias operações simultaneamente sem atrapalhar no seu desempenho.
+        </p>
+        
+        <h3>Principais Características do Node.js</h3>
+        <ul>
+            <li>
+                <strong>Assíncrono e Orientado a Eventos:</strong> Node.js utiliza um modelo de programação assíncrono, onde as operações de entrada e saída (I/O) são realizadas de forma não bloqueante. Isso significa que, enquanto uma operação está aguardando por uma resposta (como uma consulta ao banco de dados), outras operações podem continuar a ser executadas, aumentando a eficiência do código. O uso de callbacks e promessas facilita o gerenciamento de operações assíncronas.
+            </li>
+            <li>
+                <strong>Single Thread:</strong> Embora o Node.js seja single-threaded, ele pode lidar com muitas conexões simultâneas. Isso é possível graças ao loop de eventos, que gerencia as requisições em um único thread, permitindo que a aplicação continue respondendo a novas requisições enquanto aguarda o término de operações de I/O.
+            </li>
+            <li>
+                <strong>NPM (Node Package Manager):</strong> O NPM é um poderoso gerenciador de pacotes que facilita a instalação, atualização e gerenciamento de bibliotecas e dependências para projetos Node.js. Com milhões de pacotes disponíveis, os desenvolvedores podem encontrar soluções prontas para diversas necessidades, economizando tempo e esforço no desenvolvimento.
+            </li>
+            <li>
+                <strong>Comunidade Ativa:</strong> A comunidade de Node.js é uma das mais vibrantes e colaborativas. Isso resulta em um ecossistema rico em pacotes e frameworks, como Express.js, Koa.js e Nest.js, que simplificam a construção de aplicações robustas. A troca constante de conhecimento e a contribuição para projetos open source ajudam a manter a tecnologia atualizada e relevante.
+            </li>
+            <li>
+                <strong>Desempenho:</strong> O Node.js é conhecido por seu desempenho superior, especialmente em aplicações que exigem alta concorrência e que fazem uso intensivo de operações de I/O. Seu modelo não bloqueante permite que aplicações escalem facilmente e suportem muitas conexões simultâneas sem deteriorar o tempo de resposta.
+            </li>
+        </ul>
+    
+        <h3>Principais Casos de Uso do Node.js</h3>
+        <ul>
+            <li>
+                <strong>APIs RESTful:</strong> O Node.js é frequentemente utilizado para construir APIs RESTful, que servem como intermediárias entre front-end e back-end. As APIs permitem que aplicações web e móveis comuniquem-se eficientemente, trocando dados em tempo real. O framework Express.js, por exemplo, torna a construção de APIs mais rápida e intuitiva.
+            </li>
+            <li>
+                <strong>Aplicações em Tempo Real:</strong> Com sua natureza assíncrona e suporte a WebSockets, o Node.js é ideal para aplicações que requerem comunicação em tempo real, como chats, jogos online e plataformas de colaboração. Essas aplicações podem enviar e receber dados instantaneamente, proporcionando uma experiência interativa aos usuários.
+            </li>
+            <li>
+                <strong>Microserviços:</strong> A arquitetura de microserviços é uma abordagem em que uma aplicação é dividida em serviços menores e independentes. O Node.js é uma escolha popular para essa arquitetura, pois permite que cada microserviço seja desenvolvido, testado e implantado separadamente, facilitando a escalabilidade e a manutenção.
+            </li>
+            <li>
+                <strong>Serviços em Nuvem:</strong> O Node.js é amplamente utilizado para criar funções serverless em plataformas de nuvem, como AWS Lambda e Google Cloud Functions. Essas funções são executadas em resposta a eventos, eliminando a necessidade de gerenciamento de servidores e permitindo que desenvolvedores se concentrem na lógica de negócios.
+            </li>
+        </ul>
+    </div>
+    
 
     <div class="ocultar" id="React">
         <h1>React</h1>
