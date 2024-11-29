@@ -885,17 +885,55 @@
     </div>
       
     
-    <div class="ocultar" id="Node">
-        <h1>Node JS</h1>
-        <h2>Seu papel no backend e na criação de servclass=" " idores </h2>
-    </div>  
-    
     <div class="ocultar" id="DevOps">
         <h1>DevOps (GHPages e PM2/Docker)</h1>
+        <p><strong>DevOps</strong> é uma metodologia que une desenvolvimento (Dev) e operações (Ops) com o objetivo de automatizar e melhorar os processos de entrega de software. Ele promove a colaboração entre desenvolvedores e administradores de sistemas, utilizando ferramentas e práticas que garantem entregas rápidas, confiáveis e contínuas. Principais conceitos de DevOps incluem integração contínua (CI), entrega contínua (CD), automação de testes e monitoramento constante. Ferramentas como <strong>GitHub Pages</strong>, <strong>PM2</strong> e <strong>Docker</strong> desempenham papéis fundamentais nesse ciclo.</p>
+    
         <h2>GitHub Pages</h2>
-        <h2>PM2 gerenciar processos Node.js</h2>
+        <p><strong>GitHub Pages</strong> é uma solução de hospedagem gratuita oferecida pelo GitHub para sites estáticos. É amplamente utilizada para hospedar páginas de documentação, portfólios e projetos front-end. Os arquivos HTML, CSS e JavaScript são armazenados em um repositório GitHub e são automaticamente servidos como um site público.</p>
+        <p><strong>Hospedagem e Custo:</strong> O serviço é gratuito, mas limitado a sites estáticos. Não suporta servidores backend ou bancos de dados.</p>
+        <p><strong>Domínio:</strong> GitHub Pages permite associar domínios personalizados (ex: <code>www.meusite.com</code>). Basta configurar os registros DNS no provedor de domínio.</p>
+        <p><strong>Servidores:</strong> Os sites são hospedados nos servidores do GitHub, garantindo alta disponibilidade, segurança e distribuição global de conteúdo.</p>
+    
+        <h2>PM2 para Gerenciamento de Processos Node.js</h2>
+        <p><strong>PM2</strong> é um gerenciador de processos para aplicações Node.js. Ele facilita a manutenção de servidores em produção, garantindo que as aplicações continuem rodando mesmo após falhas. PM2 oferece recursos como:</p>
+        <ul>
+            <li><strong>Reinício automático:</strong> Se o processo falhar, PM2 o reinicia automaticamente.</li>
+            <li><strong>Monitoramento em tempo real:</strong> Permite acompanhar logs, uso de CPU e memória.</li>
+            <li><strong>Cluster Mode:</strong> Balanceamento de carga distribuindo múltiplas instâncias de uma aplicação.</li>
+        </ul>
+        <p><strong>Hospedagem e Custo:</strong> PM2 em si é gratuito e open-source, mas pode ser combinado com qualquer servidor dedicado ou em nuvem, com custos variando conforme a infraestrutura utilizada.</p>
+    
         <h2>Imagem Docker</h2>
+        <p>Uma <strong>imagem Docker</strong> é um pacote que contém o código-fonte de uma aplicação, dependências, bibliotecas e configurações necessárias para sua execução. Essas imagens garantem que a aplicação funcione da mesma forma em diferentes ambientes, eliminando o famoso problema de "funciona na minha máquina".</p>
+        <p><strong>Docker Hub:</strong> É o repositório oficial de imagens Docker. Desenvolvedores podem encontrar imagens públicas, como sistemas operacionais, bancos de dados e frameworks, ou criar e armazenar suas próprias imagens. Isso facilita a distribuição e o compartilhamento de contêineres.</p>
+        <p><strong>Servidores:</strong> Contêineres Docker podem ser executados em servidores locais ou em plataformas de nuvem, como AWS, Azure, Google Cloud e DigitalOcean. Ao usar o Docker Hub, você pode puxar imagens diretamente para qualquer servidor, garantindo consistência no ambiente.</p>
+        <p><strong>Custo:</strong> Docker é gratuito, mas a infraestrutura de servidores depende do provedor escolhido. O Docker Hub oferece planos gratuitos para imagens públicas e opções pagas para repositórios privados e funcionalidades avançadas.</p>
+        
         <h2>Dockerfile e Docker Compose</h2>
+        <p>O <strong>Dockerfile</strong> é um arquivo de texto que contém as instruções para criar uma imagem Docker. Ele define tudo, desde a base da imagem até a instalação de dependências e o comando para iniciar a aplicação.</p>
+        <p><strong>Docker Compose</strong> é uma ferramenta que facilita o gerenciamento de múltiplos contêineres. Com um arquivo <code>docker-compose.yml</code>, você pode definir e executar serviços complexos, como uma aplicação Node.js conectada a um banco de dados PostgreSQL, com um único comando.</p>
+    
+        <h2>Integração Contínua (CI) e Entrega Contínua (CD)</h2>
+        <p><strong>Integração Contínua (CI)</strong> é a prática de integrar frequentemente o código em um repositório compartilhado, onde builds e testes são automatizados. Isso ajuda a identificar erros rapidamente e melhora a qualidade do código.</p>
+        <ul>
+            <li><strong>Build:</strong> Processo de compilar o código e preparar o ambiente.</li>
+            <li><strong>Testes Automatizados:</strong> Garantem que novas alterações não quebrem funcionalidades existentes.</li>
+            <li><strong>Linting e Formatação:</strong> Ferramentas como ESLint e Prettier garantem padrões consistentes no código.</li>
+        </ul>
+        <p><strong>Entrega Contínua (Continuous Delivery):</strong> O código é mantido sempre em um estado pronto para produção. O deploy é feito manualmente após a aprovação.</p>
+        <p><strong>Deployment Contínuo (Continuous Deployment):</strong> As alterações são automaticamente implantadas em produção após a aprovação dos testes.</p>
+    
+        <h2>Render</h2>
+        <p><strong>Render</strong> é uma plataforma de hospedagem em nuvem que facilita o deploy de aplicações modernas. É uma alternativa popular ao Heroku, oferecendo suporte a aplicações estáticas e dinâmicas, APIs e contêineres Docker.</p>
+        <ul>
+            <li><strong>Deploy Automático:</strong> Render permite deploy diretamente de repositórios GitHub ou GitLab.</li>
+            <li><strong>Suporte a Docker:</strong> Aplicações containerizadas podem ser facilmente implantadas.</li>
+            <li><strong>CI/CD Integrado:</strong> A plataforma suporta pipelines de CI/CD nativos.</li>
+            <li><strong>Custo:</strong> Render oferece planos gratuitos para pequenas aplicações, com opções pagas para mais recursos e performance.</li>
+        </ul>
+        <p>Com Render, desenvolvedores podem criar e escalar aplicações rapidamente, com funcionalidades como domínio personalizado, certificados SSL gratuitos e monitoramento contínuo.</p>
     </div>
+    
 </body>
 </html>
