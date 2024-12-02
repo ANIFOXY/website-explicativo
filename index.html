@@ -888,7 +888,7 @@
     <div class="ocultar" id="DevOps">
         <h1>DevOps (GHPages e PM2/Docker)</h1>
         <p><strong>DevOps</strong> é uma metodologia que une desenvolvimento (Dev) e operações (Ops) com o objetivo de automatizar e melhorar os processos de entrega de software. Ele promove a colaboração entre desenvolvedores e administradores de sistemas, utilizando ferramentas e práticas que garantem entregas rápidas, confiáveis e contínuas. Principais conceitos de DevOps incluem integração contínua (CI), entrega contínua (CD), automação de testes e monitoramento constante. Ferramentas como <strong>GitHub Pages</strong>, <strong>PM2</strong> e <strong>Docker</strong> desempenham papéis fundamentais nesse ciclo.</p>
-    
+        
         <h2>GitHub Pages</h2>
         <p><strong>GitHub Pages</strong> é uma solução de hospedagem gratuita oferecida pelo GitHub para sites estáticos. É amplamente utilizada para hospedar páginas de documentação, portfólios e projetos front-end. Os arquivos HTML, CSS e JavaScript são armazenados em um repositório GitHub e são automaticamente servidos como um site público.</p>
         <p><strong>Hospedagem e Custo:</strong> O serviço é gratuito, mas limitado a sites estáticos. Não suporta servidores backend ou bancos de dados.</p>
@@ -904,15 +904,79 @@
         </ul>
         <p><strong>Hospedagem e Custo:</strong> PM2 em si é gratuito e open-source, mas pode ser combinado com qualquer servidor dedicado ou em nuvem, com custos variando conforme a infraestrutura utilizada.</p>
     
-        <h2>Imagem Docker</h2>
-        <p>Uma <strong>imagem Docker</strong> é um pacote que contém o código-fonte de uma aplicação, dependências, bibliotecas e configurações necessárias para sua execução. Essas imagens garantem que a aplicação funcione da mesma forma em diferentes ambientes, eliminando o famoso problema de "funciona na minha máquina".</p>
-        <p><strong>Docker Hub:</strong> É o repositório oficial de imagens Docker. Desenvolvedores podem encontrar imagens públicas, como sistemas operacionais, bancos de dados e frameworks, ou criar e armazenar suas próprias imagens. Isso facilita a distribuição e o compartilhamento de contêineres.</p>
-        <p><strong>Servidores:</strong> Contêineres Docker podem ser executados em servidores locais ou em plataformas de nuvem, como AWS, Azure, Google Cloud e DigitalOcean. Ao usar o Docker Hub, você pode puxar imagens diretamente para qualquer servidor, garantindo consistência no ambiente.</p>
-        <p><strong>Custo:</strong> Docker é gratuito, mas a infraestrutura de servidores depende do provedor escolhido. O Docker Hub oferece planos gratuitos para imagens públicas e opções pagas para repositórios privados e funcionalidades avançadas.</p>
+        <h2>Dockerização de um Serviço</h2>
+        <p><strong>Docker</strong> é uma plataforma que permite criar, distribuir e rodar aplicações em contêineres. A dockerização de um serviço significa empacotar a aplicação com todas as suas dependências, de forma que ela possa ser executada de forma consistente em diferentes ambientes, sem a preocupação de “funcionar na minha máquina”. A seguir, vamos ver como dockerizar um serviço Node.js.</p>
+    
+        <h3>Passos para Dockerizar um Serviço Node.js</h3>
+        <p>Para dockerizar um serviço Node.js, você precisa criar um <strong>Dockerfile</strong> e utilizar o comando <code>docker build</code> para criar a imagem e <code>docker run</code> para rodar o contêiner.</p>
         
-        <h2>Dockerfile e Docker Compose</h2>
-        <p>O <strong>Dockerfile</strong> é um arquivo de texto que contém as instruções para criar uma imagem Docker. Ele define tudo, desde a base da imagem até a instalação de dependências e o comando para iniciar a aplicação.</p>
-        <p><strong>Docker Compose</strong> é uma ferramenta que facilita o gerenciamento de múltiplos contêineres. Com um arquivo <code>docker-compose.yml</code>, você pode definir e executar serviços complexos, como uma aplicação Node.js conectada a um banco de dados PostgreSQL, com um único comando.</p>
+        <p><strong>Exemplo de Dockerfile:</strong></p>
+        <pre>
+        # Definir a imagem base
+        FROM node:14
+        
+        # Definir o diretório de trabalho no contêiner
+        WORKDIR /app
+        
+        # Copiar os arquivos da aplicação
+        COPY . .
+        
+        # Instalar as dependências
+        RUN npm install
+        
+        # Expor a porta onde a aplicação vai rodar
+        EXPOSE 3000
+        
+        # Comando para iniciar a aplicação
+        CMD ["npm", "start"]
+        </pre>
+    
+        <p>Este Dockerfile faz o seguinte:</p>
+        <ul>
+            <li>Usa a imagem oficial do Node.js como base.</li>
+            <li>Define o diretório de trabalho dentro do contêiner como <code>/app</code>.</li>
+            <li>Copia todos os arquivos do diretório atual (onde o Dockerfile está localizado) para dentro do contêiner.</li>
+            <li>Instala as dependências definidas no <code>package.json</code>.</li>
+            <li>Expondo a porta 3000, onde a aplicação estará acessível.</li>
+            <li>Inicia a aplicação com o comando <code>npm start</code>.</li>
+        </ul>
+    
+        <h3>Construindo a Imagem Docker</h3>
+        <p>Com o Dockerfile pronto, o próximo passo é construir a imagem Docker. Você pode fazer isso com o comando:</p>
+        <pre>docker build -t nome-da-imagem .</pre>
+    
+        <h3>Rodando o Contêiner Docker</h3>
+        <p>Depois de construir a imagem, você pode rodá-la com o comando:</p>
+        <pre>docker run -p 3000:3000 nome-da-imagem</pre>
+        <p>Isso fará o mapeamento da porta 3000 do contêiner para a porta 3000 do seu host, permitindo que você acesse a aplicação em <code>http://localhost:3000</code>.</p>
+    
+        <h2>Docker Compose</h2>
+        <p>Se sua aplicação requer múltiplos serviços, como um banco de dados, você pode usar o Docker Compose para orquestrar múltiplos contêineres com facilidade.</p>
+    
+        <p><strong>Exemplo de docker-compose.yml:</strong></p>
+        <pre>
+        version: '3'
+        services:
+          app:
+            build: .
+            ports:
+              - "3000:3000"
+            depends_on:
+              - db
+          db:
+            image: postgres:13
+            environment:
+              POSTGRES_PASSWORD: example
+            volumes:
+              - db_data:/var/lib/postgresql/data
+    
+        volumes:
+          db_data:
+        </pre>
+        <p>Esse arquivo define dois serviços: uma aplicação Node.js e um banco de dados PostgreSQL. O serviço <code>app</code> depende do serviço <code>db</code>. O Docker Compose vai garantir que ambos os serviços sejam executados corretamente e conectados.</p>
+    
+        <p>Para rodar os contêineres definidos no <code>docker-compose.yml</code>, basta usar o comando:</p>
+        <pre>docker-compose up</pre>
     
         <h2>Integração Contínua (CI) e Entrega Contínua (CD)</h2>
         <p><strong>Integração Contínua (CI)</strong> é a prática de integrar frequentemente o código em um repositório compartilhado, onde builds e testes são automatizados. Isso ajuda a identificar erros rapidamente e melhora a qualidade do código.</p>
@@ -923,7 +987,7 @@
         </ul>
         <p><strong>Entrega Contínua (Continuous Delivery):</strong> O código é mantido sempre em um estado pronto para produção. O deploy é feito manualmente após a aprovação.</p>
         <p><strong>Deployment Contínuo (Continuous Deployment):</strong> As alterações são automaticamente implantadas em produção após a aprovação dos testes.</p>
-    
+        
         <h2>Render</h2>
         <p><strong>Render</strong> é uma plataforma de hospedagem em nuvem que facilita o deploy de aplicações modernas. É uma alternativa popular ao Heroku, oferecendo suporte a aplicações estáticas e dinâmicas, APIs e contêineres Docker.</p>
         <ul>
@@ -934,6 +998,7 @@
         </ul>
         <p>Com Render, desenvolvedores podem criar e escalar aplicações rapidamente, com funcionalidades como domínio personalizado, certificados SSL gratuitos e monitoramento contínuo.</p>
     </div>
+    
     
 </body>
 </html>
